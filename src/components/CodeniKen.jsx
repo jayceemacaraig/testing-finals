@@ -22,7 +22,7 @@ L.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-const ORS_API_KEY = process.env.OPENROUTESRVICE_API_KEY;
+// const ORS_API_KEY = process.env.OPENROUTESRVICE_API_KEY;
 
 const MapFlyTo = ({ coords }) => {
   const map = useMap();
