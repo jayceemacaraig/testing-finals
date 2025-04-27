@@ -1,6 +1,8 @@
 import { useEffect } from "react";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 
-const RenderMap = ({ mapRef, L, setMap }) => {
+const RenderMap = ({ mapRef,setMap }) => {
   useEffect(() => {
     if (mapRef.current) return;
 
