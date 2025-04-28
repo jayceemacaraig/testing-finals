@@ -32,7 +32,7 @@ const RenderMap = ({ mapRef,setMap }) => {
 
     map.on("click", onMapClick);
   }, []);
-  return <div id="map" style={{ height: "95vh" }}></div>;
+  return <div id="map" style={{ height: "92vh", zIndex: 0, borderRadius: 12, border: '1px solid gray' }}></div>;
 };
 
 export default RenderMap;

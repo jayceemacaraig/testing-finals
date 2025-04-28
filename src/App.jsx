@@ -31,11 +31,6 @@ const App = () => {
     await fetchCoordinates(initlist, setList)
   };
 
-  // const mainFunction = async () => {
-  //   await setTimeout(()=> {fetch()}, [5000])
-    
-    
-  // }
 
   const showRoute = () => {
     console.log(segment);
@@ -45,12 +40,9 @@ const App = () => {
   };
 
   const NextCoordinates = () => {
-    const firstSeg = findClosestIndex(list, coords[1]);
+    const firstSeg = findClosestIndex(list, coords[1]); //initializing the coordinates to match
     console.log(list);
-    console.log("Index of second Coordinate in the List : ", firstSeg);
-    console.log("Indexing ng second coordinate :", list[firstSeg]);
-    console.log("Second Coordinate : ", coords[1]);
-    console.log(list.slice(0, firstSeg + 1));
+    console.log(list.slice(0, firstSeg + 1)); //To find the first segment
     setSegment(list.slice(0, firstSeg + 1));
     console.log("First Segment : ", segment);
   };
