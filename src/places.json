@@ -1,0 +1,961 @@
+[
+    {
+        "name": "Perez Park",
+        "description": "A relaxing park in the heart of Lucena City.",
+        "coordinates": {
+            "lat": 13.9374,
+            "lng": 121.6159
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "Purok 2"
+        },
+        "tags": [
+            "park",
+            "relax",
+            "landmark"
+        ]
+    },
+    {
+        "name": "SM City Lucena",
+        "description": "Lucena's major shopping destination.",
+        "coordinates": {
+            "lat": 13.9311,
+            "lng": 121.6166
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "Purok 5"
+        },
+        "tags": [
+            "mall",
+            "shopping",
+            "entertainment",
+            "department store"
+        ]
+    },
+    {
+        "name": "Pacific Mall Lucena",
+        "description": " Premier shopping destination offering a wide range of shops, dining options, and entertainment",
+        "coordinates": {
+            "lat": 13.9371,
+            "lng": 121.6089
+        },
+        "address": {
+            "barangay": "Barangay 3",
+            "purok": "M.L. Tagarao Street"
+        },
+        "tags": [
+            "shopping",
+            "dining",
+            "entertainment",
+            "retail",
+            "mall",
+            "department store"
+        ]
+    },
+    {
+        "name": "Hachienda Inn",
+        "description": "Lucena's top spot for dining and relaxation.",
+        "coordinates": {
+            "lat": 13.9333,
+            "lng": 121.6127
+        },
+        "address": {
+            "barangay": "Barangay 7",
+            "purok": "Magallanes Street"
+        },
+        "tags": [
+            "restaurant",
+            "dining",
+            "cuisine",
+            "food"
+        ]
+    },
+    {
+        "name": "Cafe Antigua",
+        "description": "Offers variety of flavorful dishes!",
+        "coordinates": {
+            "lat": 13.9350,
+            "lng": 121.6132
+        },
+        "address": {
+            "barangay": "Barangay 6",
+            "purok": "Profugo Street"
+        },
+        "tags": [
+            "restaurant",
+            "dining",
+            "cuisine",
+            "food"
+        ]
+    },
+    {
+        "name": "Buddy's Pizza",
+        "description": "Known for its signature Filipino dishes.",
+        "coordinates": {
+            "lat": 13.9312,
+            "lng": 121.6125
+        },
+        "address": {
+            "barangay": "Barangay 8",
+            "purok": "Corner Leon Guinto Street"
+        },
+        "tags": [
+            "restaurant",
+            "cuisine",
+            "dining",
+            "food",
+            "filipino food"
+        ]
+    },
+    {
+        "name": "Lugaw Queen",
+        "description": "Go-to spot for delicious Filipino comfort food!",
+        "coordinates": {
+            "lat": 13.9335,
+            "lng": 121.6130
+        },
+        "address": {
+            "barangay": "Barangay 6",
+            "purok": "M.L.Tagarao Street"
+        },
+        "tags": [
+            "restaurant",
+            "cuisine",
+            "lugaw",
+            "comfort food"
+        ]
+    },
+    {
+        "name": "Señoritas Mexinoy Kitchen",
+        "description": "A vibrant restaurant blending Mexican and Filipino flavors!",
+        "coordinates": {
+            "lat": 13.9402,
+            "lng": 121.6067
+        },
+        "address": {
+            "barangay": "Ilayang Iyam",
+            "purok": "Pearl Street"
+        },
+        "tags": [
+            "restaurant",
+            "Mexican cuisine",
+            "Filipino cuisine",
+            "dining",
+            "food"
+        ]
+    },
+    {
+        "name": "Slash Restaurant",
+        "description": "Top spot for a variety of delicious dishes",
+        "coordinates": {
+            "lat": 13.9351,
+            "lng": 121.6115
+        },
+        "address": {
+            "barangay": "Barangay 5",
+            "purok": "Allarey Corner Rizal Street"
+        },
+        "tags": [
+            "restaurant",
+            "dining",
+            "cuisine",
+            "food"
+        ]
+    },
+    {
+        "name": "Eduvigis Coffee Bar and Restaurant",
+        "description": "Fresh coffee, hearty meals, and a cozy gathering spot.",
+        "coordinates": {
+            "lat": 13.9334,
+            "lng": 121.6118
+        },
+        "address": {
+            "barangay": "Barangay 7",
+            "purok": "Corner Bonifacio Street"
+        },
+        "tags": [
+            "coffee",
+            "restaurant",
+            "casual dining",
+            "meals",
+            "food"
+        ]
+    },
+    {
+        "name": "Isaiah's Kitchen",
+        "description": "Perfect spot for casual dining, social gatherings, or a cozy moment to relax.",
+        "coordinates": {
+            "lat": 13.9341,
+            "lng": 121.6116
+        },
+        "address": {
+            "barangay": "Barangay 7",
+            "purok": "80 Allarey Street"
+        },
+        "tags": [
+            "restaurant",
+            "kitchen",
+            "dining",
+            "meals",
+            "food",
+            "gatherings",
+            "cozy",
+            "relax"
+        ]
+    },
+    {
+        "name": "Jollibee",
+        "description": "Famous for Filipino-style spaghetti, crispy Chickenjoy, and sweet desserts",
+        "coordinates": {
+            "lat": 13.9359,
+            "lng": 121.6132
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "129 Quezon Avenue"
+        },
+        "tags": [
+            "fast food",
+            "Filipino cuisine",
+            "fried chicken",
+            "spaghetti",
+            "desserts"
+        ]
+    },
+    {
+        "name": "McDonald's",
+        "description": "Offers classic burgers, fries, breakfast options, and fried chicken",
+        "coordinates": {
+            "lat": 13.9364,
+            "lng": 121.6133
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "129 Quezon Avenue"
+        },
+        "tags": [
+            "fast food",
+            "burgers",
+            "fries",
+            "fried chicken",
+            "breakfast"
+        ]
+    },
+    {
+        "name": "Chowking",
+        "description": "Serves Chinese-Filipino dishes such as dim sum, Chao Fan rice bowls, and noodle soups.",
+        "coordinates": {
+            "lat": 13.9367,
+            "lng": 121.6134
+        },
+        "address": {
+            "barangay": "Barangay 2",
+            "purok": "Quezon Avenue cor. ML Tagarao Street"
+        },
+        "tags": [
+            "fast food",
+            "Chinese cuisine",
+            "rice meals",
+            "dim sum"
+        ]
+    },
+    {
+        "name": "KFC",
+        "description": "Known for its crispy fried chicken, rice bowls, and sides",
+        "coordinates": {
+            "lat": 13.9367,
+            "lng": 121.6132
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "Quezon Avenue cor. ML Tagarao Street"
+        },
+        "tags": [
+            "fast food",
+            "fried chicken",
+            "gravy",
+            "comfort food"
+        ]
+    },
+    {
+        "name": "Greenwich Pizza",
+        "description": "Specializes in pizzas, pasta, and rice meals, ideal for family and group dining.",
+        "coordinates": {
+            "lat": 13.9371,
+            "lng": 121.6132
+        },
+        "address": {
+            "barangay": "Barangay 1 Poblacion",
+            "purok": "2886 Quezon Avenue"
+        },
+        "tags": [
+            "fast food",
+            "pizza",
+            "pasta",
+            "group dining",
+            "family-friendly"
+        ]
+    },
+    {
+        "name": "Red Ribbon",
+        "description": "Offers cakes, pastries, and light meals, perfect for desserts and celebrations.",
+        "coordinates": {
+            "lat": 13.9369,
+            "lng": 121.6132
+        },
+        "address": {
+            "barangay": "Barangay 3",
+            "purok": "106 Quezon Avenue"
+        },
+        "tags": [
+            "cakes",
+            "pastries",
+            "desserts",
+            "celebrations"
+        ]
+    },
+    {
+        "name": "Lucena Fresh Air Hotel and Resort",
+        "description": "Relaxing retreat offering spacious accommodations, refreshing swimming pools, serene gardens, and exceptional dining options.",
+        "coordinates": {
+            "lat": 13.9435,
+            "lng": 121.5933
+        },
+        "address": {
+            "barangay": "Barangay Isabang",
+            "purok": "Old Manila South Road"
+        },
+        "tags": [
+            "hotel",
+            "resort",
+            "accommodation",
+            "leisure",
+            "tourism"
+        ]
+    }
+    ,
+    {
+        "name": "Okazu Garden and Resort",
+        "description": "Serene haven featuring lush gardens, elegant accommodations, a rejuvenating spa, and exquisite dining experiences.",
+        "coordinates": {
+            "lat": 13.9412,
+            "lng": 121.6019
+        },
+        "address": {
+            "barangay": "Silangang Mayao",
+            "purok": "Love Street corner Gamboa Street"
+        },
+        "tags": [
+            "hotel",
+            "resort",
+            "accommodation",
+            "leisure",
+            "spa"
+        ]
+    },
+    {
+        "name": "Tourist Hotel",
+        "description": "Enjoy affordable comfort with air-conditioned rooms, free Wi-Fi, and excellent service for a relaxing stay",
+        "coordinates": {
+            "lat": 13.9365,
+            "lng": 121.5986
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": "Maharlika Highway"
+        },
+        "tags": [
+            "hotel",
+            "affordable",
+            "accommodation",
+            "tourism",
+            "budget"
+        ]
+    },
+    {
+        "name": "Urbantel Hotel",
+        "description": "Experience comfort and convenience with modern amenities, budget-friendly rooms, and easy access to popular attractions.",
+        "coordinates": {
+            "lat": 13.9322,
+            "lng": 121.6134
+        },
+        "address": {
+            "barangay": "Barangay 9",
+            "purok": "Don Queblar Street corner Merchan Street"
+        },
+        "tags": [
+            "hotel",
+            "accommodation",
+            "affordable",
+            "tourism",
+            "attractions"
+        ]
+    },
+    {
+        "name": "Citilink Hotel",
+        "description": "Enjoy easy access to shopping, dining, and entertainment options",
+        "coordinates": {
+            "lat": 13.9416,
+            "lng": 121.6236
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "Purok Little Baguio 1"
+        },
+        "tags": [
+            "hotel",
+            "accommodation",
+            "shopping",
+            "dining",
+            "tourism"
+        ]
+    },
+    {
+        "name": "Loxley Hotel",
+        "description": "Offers affordable accommodations with flexible hourly rates, making it ideal for short stays or quick rests. ",
+        "coordinates": {
+            "lat": 13.9226,
+            "lng": 121.6211
+        },
+        "address": {
+            "barangay": "Bocohan",
+            "purok": "Lucena Diversion Road"
+        },
+        "tags": [
+            "hotel",
+            "affordable",
+            "accommodation",
+            "short stay",
+            "budget"
+        ]
+    },
+    {
+        "name": "GSR Place",
+        "description": "Offers stylish, fully equipped rooms perfect for short stays or longer visits.",
+        "coordinates": {
+            "lat": 13.9341,
+            "lng": 121.6070
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": "Lot 2181-A Pedro Nieva Street"
+        },
+        "tags": [
+            "hotel",
+            "accommodation",
+            "short stay",
+            "long stay",
+            "stylish"
+        ]
+    },
+    {
+        "name": "Queen Margarette Hotel - Downtown",
+        "description": "Offers comfortable, air-conditioned rooms with modern amenities, near local attractions, and excellent services",
+        "coordinates": {
+            "lat": 13.9370,
+            "lng": 121.6127
+        },
+        "address": {
+            "barangay": "Barangay 6",
+            "purok": "M.L. Tagarao Street corner Granja Street"
+        },
+        "tags": [
+            "hotel",
+            "accommodation",
+            "comfortable",
+            "amenities",
+            "attractions",
+            "services",
+            "tourism"
+        ]
+    },
+    {
+        "name": "Hotel Kbartolo",
+        "description": "Offers a family-friendly atmosphere with spacious, air-conditioned rooms featuring kitchenettes, private bathrooms, and balconies.",
+        "coordinates": {
+            "lat": 13.9376,
+            "lng": 121.6050
+        },
+        "address": {
+            "barangay": "Barangay 3",
+            "purok": "Lopez Street"
+        },
+        "tags": [
+            "hotel",
+            "family-friendly",
+            "accommodation",
+            "spacious",
+            "tourism"
+        ]
+    },
+    {
+        "name": "Diamond Resort and Hotel",
+        "description": "Offers a Mediterranean-inspired ambiance with luxurious accommodations and a swimming pool, ",
+        "coordinates": {
+            "lat": 13.9408,
+            "lng": 121.6224
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "Maharlika Highway"
+        },
+        "tags": [
+            "hotel",
+            "resort",
+            "luxurious",
+            "Mediterranean",
+            "swimming pool"
+        ]
+    },
+    {
+        "name": "Meaco Royal Hotel",
+        "description": "Offers clean, spacious rooms with free Wi-Fi, air conditioning, and 24-hour front desk service",
+        "coordinates": {
+            "lat": 13.9324,
+            "lng": 121.6126
+        },
+        "address": {
+            "barangay": "Barangay 7",
+            "purok": "OPM Building"
+        },
+        "tags": [
+            "hotel",
+            "affordable",
+            "clean ",
+            "accommodation",
+            "24-hour service"
+        ]
+    },
+    {
+        "name": "Sir Josh Hotel",
+        "description": "Offers basic accommodations with air-conditioned rooms, free Wi-Fi, and a shared pantry,",
+        "coordinates": {
+            "lat": 13.9343,
+            "lng": 121.6119
+        },
+        "address": {
+            "barangay": "Barangay 6",
+            "purok": "Zamora Street corner Bonifacio Street"
+        },
+        "tags": [
+            "hotel",
+            "basic accommodation",
+            "affordable",
+            "shared pantry",
+            "free Wi-Fi"
+        ]
+    },
+    {
+        "name": "Lady Luck Hotel",
+        "description": "Offers no-frills, budget-friendly rooms with air conditioning and basic amenities",
+        "coordinates": {
+            "lat": 13.9368,
+            "lng": 121.6103
+        },
+        "address": {
+            "barangay": "Barangay 5",
+            "purok": "M.L. Tagarao Street"
+        },
+        "tags": [
+            "hotel",
+            "budget-friendly",
+            "affordable",
+            "amenities",
+            "accommodation"
+        ]
+    },
+    {
+        "name": "El Coco Boutique Hotel",
+        "description": "Offers a tropical-chic retreat, a rooftop SkyDeck Café Lounge, and a prime location just across from SM City Lucena,",
+        "coordinates": {
+            "lat": 13.9413,
+            "lng": 121.6238
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "El Coco Building"
+        },
+        "tags": [
+            "hotel",
+            "boutique",
+            "tropical retreat",
+            "rooftop lounge",
+            "prime location"
+        ]
+    },
+    {
+        "name": "2205 Suites",
+        "description": "Offers modern, spacious rooms with kitchenettes, private balconies, and a rooftop pool",
+        "coordinates": {
+            "lat": 13.9408,
+            "lng": 121.6079
+        },
+        "address": {
+            "barangay": "Ilayang Iyam",
+            "purok": "Gomez Extension"
+        },
+        "tags": [
+            "hotel",
+            "modern accommodation",
+            "spacious rooms",
+            "rooftop pool",
+            "private balcony"
+        ]
+    },
+    {
+        "name": "Lucena MMG General Hospital",
+        "description": "Offering 24/7 emergency care, dialysis, imaging, surgery, and specialized services like cardiology, pulmonary, and physical therapy. ",
+        "coordinates": {
+            "lat": 13.9450,
+            "lng": 121.6309
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "Maharlika Highway"
+        },
+        "tags": [
+            "hospital",
+            "emergency care",
+            "dialysis",
+            "surgery",
+            "specialized services"
+        ]
+    },
+    {
+        "name": "Quezon Memorial Hospital",
+        "description": "Government-run medical facility providing a wide range of healthcare services including emergency care, surgery, maternal and child health, and specialized treatments.",
+        "coordinates": {
+            "lat": 13.9420,
+            "lng": 121.6127
+        },
+        "address": {
+            "barangay": "Barangay 9",
+            "purok": "Quezon Avenue Extension"
+        },
+        "tags": [
+            "hospital",
+            "emergency care",
+            "surgery",
+            "maternal health",
+            "specialized treatments"
+        ]
+    },
+    {
+        "name": "Quezon Medical Center",
+        "description": "Government-run hospital providing a wide range of healthcare services including emergency care, surgery, maternal and child health, and specialized treatments.",
+        "coordinates": {
+            "lat": 13.9422,
+            "lng": 121.6125
+        },
+        "address": {
+            "barangay": "Barangay 9",
+            "purok": "Quezon Avenue Extension"
+        },
+        "tags": [
+            "hospital",
+            "emergency care",
+            "surgery",
+            "maternal health",
+            "specialized treatments"
+        ]
+    },
+    {
+        "name": "Mount Carmel Diocesan General Hospital",
+        "description": "Private Catholic hospital offering a wide range of medical services including emergency care, laboratory, pharmacy, CT scan and more",
+        "coordinates": {
+            "lat": 13.9407,
+            "lng": 121.6110
+        },
+        "address": {
+            "barangay": "Barangay 1 (Poblacion)",
+            "purok": "Allarey Extention"
+        },
+        "tags": [
+            "hospital",
+            "emergency care",
+            "laboratory",
+            "pharmacy",
+            "CT scan"
+        ]
+    },
+    {
+        "name": "St. Anne General Hospital Inc.",
+        "description": "Private healthcare facility offering a wide range of medical services including internal medicine, surgery, and more",
+        "coordinates": {
+            "lat": 13.9376,
+            "lng": 121.6187
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "P. Gomez Extension Red-V"
+        },
+        "tags": [
+            "hospital",
+            "internal medicine",
+            "surgery",
+            "medical services"
+        ]
+    },
+    {
+        "name": "Lucena United Doctors Hospital And Medical Center",
+        "description": "A private, Level II, DOH-PHIC-accredited, multi-specialty healthcare institution offering a wide range of medical services and exceptional patient care.",
+        "coordinates": {
+            "lat": 13.9473,
+            "lng": 121.5853
+        },
+        "address": {
+            "barangay": "Barangay Isabang",
+            "purok": "Maharlika Highway"
+        },
+        "tags": [
+            "hospital",
+            "Level II",
+            "DOH-PHIC accredited",
+            "multi-specialty",
+            "patient care"
+        ]
+    },
+    {
+        "name": "Savemore Market",
+        "description": "Ooffering a wide selection of fresh produce, pantry staples, and household essentials at affordable prices.",
+        "coordinates": {
+            "lat": 13.9346,
+            "lng": 121.6145
+        },
+        "address": {
+            "barangay": "Barangay 6 (Poblacion)",
+            "purok": "C.M. Recto Street"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "store",
+            "fresh produce",
+            "pantry staples",
+            "household essentials"
+        ]
+    },
+    {
+        "name": "La Suerte Warehouse City",
+        "description": "Spacious retail hub offering a wide selection of groceries, household goods, and wholesale items",
+        "coordinates": {
+            "lat": 13.9329,
+            "lng": 121.6143
+        },
+        "address": {
+            "barangay": "Barangay 6 (Poblacion)",
+            "purok": "C.M. Recto Street"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "store",
+            "household goods",
+            "wholesale items"
+        ]
+    },
+    {
+        "name": "New Prosperous Grocery",
+        "description": "Offering essential grocery items and household goods for everyday needs.",
+        "coordinates": {
+            "lat": 13.9336,
+            "lng": 121.6143
+        },
+        "address": {
+            "barangay": "Barangay 6 (Poblacion)",
+            "purok": "C.M. Recto Street"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "store",
+            "household goods"
+        ]
+    },
+    {
+        "name": "New Lucena City Public Market",
+        "description": "Offering a clean and organized shopping experience for fresh produce, dry goods, and local products",
+        "coordinates": {
+            "lat": 13.9334,
+            "lng": 121.6146
+        },
+        "address": {
+            "barangay": "Barangay 6 (Poblacion)",
+            "purok": "C.M. Recto Street"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "fresh produce",
+            "local products"
+        ]
+    },
+    {
+        "name": "Ilaya Mart",
+        "description": "Offering a convenient selection of groceries, household essentials, and general merchandise for everyday needs.",
+        "coordinates": {
+            "lat": 13.9340,
+            "lng": 121.6123
+        },
+        "address": {
+            "barangay": "Barangay 4 (Poblacion)",
+            "purok": "Zamora Street"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "household essentials",
+            "general merchandise"
+        ]
+    },
+    {
+        "name": "Shoprite Center",
+        "description": "Offering a convenient selection of daily essentials and household items",
+        "coordinates": {
+            "lat": 13.9347,
+            "lng": 121.6145
+        },
+        "address": {
+            "barangay": "Barangay 6 (Poblacion)",
+            "purok": "C.M. Recto Street"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "household essentials"
+        ]
+    },
+    {
+        "name": "Puregold Gulang-Gulang Lucena",
+        "description": "Offering a wide selection of groceries, household essentials, and wholesale items at affordable prices",
+        "coordinates": {
+            "lat": 13.9470,
+            "lng": 121.6140
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "70 Quezon Avenue"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "store"
+        ]
+    },
+    {
+        "name": "BMADZ Stop & Go HyperMarket",
+        "description": "Offering a convenient selection of groceries and household essentials for everyday needs",
+        "coordinates": {
+            "lat": 13.9349,
+            "lng": 121.6020
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "172 Old Manila South Road"
+        },
+        "tags": [
+            "groceries",
+            "supermarket",
+            "household essentials",
+            "store"
+        ]
+    },
+    {
+        "name": "UNITOP",
+        "description": "Offering a wide selection of affordable household items, home decor, and general merchandise,",
+        "coordinates": {
+            "lat": 13.9351,
+            "lng": 121.6141
+        },
+        "address": {
+            "barangay": "Barangay 6",
+            "purok": "Merchan Street corner Profugo Street"
+        },
+        "tags": [
+            "department store",
+            "supplies",
+            "essentials",
+            "household items",
+            "home decor"
+        ]
+    },
+    {
+        "name": "NOVO",
+        "description": "Budget-friendly retail destination offering a wide variety of clothing, household items, and general merchandise,",
+        "coordinates": {
+            "lat": 13.9322,
+            "lng": 121.6126
+        },
+        "address": {
+            "barangay": "Barangay 7",
+            "purok": "OPM Building"
+        },
+        "tags": [
+            "department store",
+            "supplies",
+            "essentials",
+            "clothing",
+            "household items"
+        ]
+    },
+    {
+        "name": "JoyCity",
+        "description": "Providing an extensive variety of affordable school supplies, office essentials, and general merchandise",
+        "coordinates": {
+            "lat": 13.9357,
+            "lng": 121.6146
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "San Fernando Street"
+        },
+        "tags": [
+            "department store",
+            "supplies",
+            "essentials",
+            "school supplies",
+            "office essentials"
+        ]
+    },
+    {
+        "name": "Sunlife Bookstore",
+        "description": "Offering a wide range of school supplies, office essentials, and stationery products.",
+        "coordinates": {
+            "lat": 13.9359,
+            "lng": 121.6137
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "88 Enriquez Street"
+        },
+        "tags": [
+            "department store",
+            "supplies",
+            "essentials",
+            "school supplies",
+            "stationery"
+        ]
+    },
+    {
+        "name": "Lucky Book Store",
+        "description": "Offers affordable school supplies, office essentials, art materials, and sporting goods",
+        "coordinates": {
+            "lat": 13.9360,
+            "lng": 121.6133
+        },
+        "address": {
+            "barangay": "Barangay 4",
+            "purok": "129 Quezon Avenue"
+        },
+        "tags": [
+            "department store",
+            "supplies",
+            "essentials",
+            "school supplies",
+            "materials",
+            "sporting goods"
+        ]
+    }
+]

@@ -1,12 +1,14 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect, useMemo } from "react";
+import Fuse from "fuse.js";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import places from "./places.json";
 import RenderMap from "./components/RenderMap";
 import findClosestIndex from "./utils/findClosestIndex";
 import fetchCoordinates from "./utils/fetchCoordinates";
 import fetchPlaces from "./utils/fetchPlaces";
 
-const App = () => {
+const UserSection = () => {
   const mapRef = useRef(null);
   const [map, setMap] = useState(null);
   const [coords, setCoords] = useState([]);
@@ -15,91 +17,163 @@ const App = () => {
   const [segment, setSegment] = useState([]);
   const [list, setList] = useState([]);
   const routeLayer = useRef(null);
+  const [startFunction, setStartFunction] = useState(false);
+  const [details, setDetails] = useState(null);
 
-  let myLines = {
-    type: "LineString",
-    coordinates: segment,
-  };
+    const top10Places = [
+    "Perez Park",
+    "SM City Lucena",
+    "Pacific Mall Lucena",
+    "Hachienda Inn",
+    "Lucena Fresh Air Hotel and Resort",
+    "Okazu Garden and Resort",
+    "El Coco Boutique Hotel",
+    "2205 Suites",
+    "Señoritas Mexinoy Kitchen",
+    "Buddy's Pizza"
+  ];
+
+  
+      const fuse = useMemo(
+        () =>
+            new Fuse(places, {
+                keys: ["name", "description", "tags", "address.barangay", "address.purok"],
+                threshold: 0.3,
+            }),
+        []
+    );
 
   const fetch = async () => {
-    const  data = await fetchPlaces(numInput, placeInput);
-    console.log(data)
-    console.log(coords)
-    let initlist = [];
-    data.map((e) => {initlist.push(e.coordinates);});
-    setCoords(initlist)
-    await fetchCoordinates(initlist, setList)
+    const data = await fetchPlaces(numInput, placeInput);
+    let initlist = data.map((e) => e.coordinates);
+
+    setCoords(initlist);
+    setDetails(data);
+
+    await fetchCoordinates(initlist, setList);
+    setStartFunction(true);
   };
+
 
 
   const showRoute = () => {
-    console.log(segment);
-    const layer = L.geoJSON(myLines).addTo(map);
-    map.fitBounds(layer.getBounds());
+    if (!segment || segment.length === 0) {
+      console.warn("No route segment to show.");
+      return;
+    }
+
+    if (routeLayer.current) {
+      map.removeLayer(routeLayer.current);
+    }
+
+    const layer = L.geoJSON({
+      type: "LineString",
+      coordinates: segment,
+    }).addTo(map);
+
+    const bounds = layer.getBounds();
+    if (bounds.isValid()) {
+      map.fitBounds(bounds);
+    } else {
+      console.warn("Invalid bounds for segment.");
+    }
+
     routeLayer.current = layer;
   };
 
-  const NextCoordinates = () => {
-    const firstSeg = findClosestIndex(list, coords[1]); //initializing the coordinates to match
-    console.log(list);
-    console.log(list.slice(0, firstSeg + 1)); //To find the first segment
-    setSegment(list.slice(0, firstSeg + 1));
-    console.log("First Segment : ", segment);
+  const buttonFunction = (index) => {
+    console.log("index:", index);
+    console.log("coordinate target 1:", coords[index]);
+    console.log("coordinate target 2:", coords[index + 1]);
+    console.log("coordinates:", coords)
+    console.log("List:", list);
+
+    if (index === 0) {
+    setSegment(list.slice(0, findClosestIndex(list, coords[index])))
+    console.log("segment 1:")
+  }else if (index === coords.length) {
+    setSegment(list.slice(findClosestIndex(list, coords[index-1], )))
+    console.log("segment 3:")
+  } else {
+    setSegment(findClosestIndex(list, coords[index]), findClosestIndex(list, coords[index + 1]))
+    console.log("segment 2:")
+    }
   };
 
-  const nextSegment = () => {
-    map.removeLayer(routeLayer.current);
-    const firstSeg = findClosestIndex(list, coords[1]);
-    const secondSeg = findClosestIndex(list, coords[2]);
-    setSegment(list.slice(firstSeg, secondSeg));
-    showRoute();
-  };
+  useEffect(() => {
+    if (segment && segment.length > 0) {
+      showRoute();
+    }
+  }, [segment]); 
 
   return (
-    <div className="w-full h-screen flex flex-col">
-      <input
-        onChange={(e) => {
-          setNumInput(e.target.value);
-        }}
-        value={numInput}
-        placeholder="Put the number of places you want to visit"
-      />
-      <input
-        onChange={(e) => {
-          setPlaceInput(e.target.value);
-        }}
-        value={placeInput}
-        placeholder="Put the places you want to visit"
-      />
-      <button
-        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-        onClick={fetch}
-      >
-        Fetch
-      </button>
-      <div>
-        <button
-          className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-          onClick={NextCoordinates}
-        >
-          Segmenting Coordinates
-        </button>
-        <button
-          className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-          onClick={showRoute}
-        >
-          Show Route
-        </button>
-        <button
-          className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-          onClick={nextSegment}
-        >
-          Next Segment
-        </button>
+    <main className="flex flex-row">
+      <div className="w-5/10 border-r-4 mr-5 flex flex-col items-center">
+        <h1 className="text-6xl font-black mt-10">TARAVEL</h1>
+        <h2 className="text-2xl font-bold w-3/5 text-center mb-5">
+          "Life's too short to stay in one place"
+        </h2>
+        <div className="flex flex-col gap-5 w-full items-center pb-10 border-b-5 shadow-2xl">
+          <input
+            onChange={(e) => {
+              setNumInput(e.target.value);
+            }}
+            value={numInput}
+            placeholder="Put the number of places you want to visit"
+            className="border-2 px-5 rounded-xl w-4/5 text-2xl placeholder-shown:text-sm placeholder-shown:py-2 "
+          />
+          <input
+            onChange={(e) => {
+              setPlaceInput(e.target.value);
+            }}
+            value={placeInput}
+            placeholder="Put the places you want to visit"
+            className="border-2 px-5 rounded-xl w-4/5 text-2xl placeholder-shown:text-sm placeholder-shown:py-2"
+          />
+          <button
+            className="px-5 py-2 bg-blue-500 shadow-xl text-white font-black rounded-4xl text-xl hover:bg-blue-800"
+            onClick={fetch}
+          >
+            TRAVEL
+          </button>
+        </div>
+        <div className="grid grid-cols-2 gap-y-5 pt-10 w-full h-77 justify-items-center overflow-auto">
+          {coords.map((e) => {
+            let index = coords.indexOf(e);
+            return (
+              <div
+                className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center"
+                key={index}
+                onClick={() => {
+                  buttonFunction(index);
+                }}
+              >
+                Route {index + 1}
+              </div>
+            );
+          })}
+
+          {/* <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div>
+          <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div>
+          <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div>
+          <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div> */}
+        </div>
+
+        {/* <div className="w-70 h-100 border-2 rounded-xl bg-red-500 fixed bottom-1 left-125 z-10 p-5">
+          <h1>Route Details</h1>
+          <hr></hr>
+          <h1>Route 1</h1>
+          <div>
+            <h2>Distance</h2>
+            <h2>Durations</h2>
+          </div>
+        </div> */}
       </div>
-      <RenderMap mapRef={mapRef} setMap={setMap} />
-    </div>
+      <div className="w-full p-5 border-2 mt-2 mr-5 rounded-2xl">
+        <RenderMap mapRef={mapRef} setMap={setMap} />
+      </div>
+    </main>
   );
 };
 
-export default App;
+export default UserSection;

@@ -6,7 +6,7 @@ const fetchCoordinates = async (coords, setList) => {
   try {
     const body = {
       coordinates: coords,
-      radiuses: [1000, 1000, 1000],
+      radiuses: [coords.map(() =>  1000)],
     };
 
     console.log("Sending to API:", JSON.stringify(body));
@@ -20,9 +20,13 @@ const fetchCoordinates = async (coords, setList) => {
         },
       }
     );
-    console.log(response.data);
+
+    
     const initList = response.data.features[0].geometry.coordinates;
     setList(initList);
+    console.log("Request Data", response.data);
+
+
   } catch (error) {
     console.error("Route error:", error);
     alert("Routing failed. Check your coordinates and try again.");
