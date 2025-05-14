@@ -7,6 +7,6 @@ import PlaceList from "./components/PlaceList.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <PlaceList />
+    <UserSection />
   </StrictMode>
 );

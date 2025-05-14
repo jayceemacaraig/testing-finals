@@ -6,7 +6,7 @@ const fetchCoordinates = async (coords, setList) => {
   try {
     const body = {
       coordinates: coords,
-      radiuses: [coords.map(() =>  1000)],
+      // radiuses: [coords.map(() =>  1000)],
     };
 
     console.log("Sending to API:", JSON.stringify(body));

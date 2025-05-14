@@ -6,8 +6,9 @@ import places from "./places.json";
 import RenderMap from "./components/RenderMap";
 import findClosestIndex from "./utils/findClosestIndex";
 import fetchCoordinates from "./utils/fetchCoordinates";
+import fetchCurrentLocation from "./utils/fetchCurrentLocation";
 import fetchPlaces from "./utils/fetchPlaces";
-import PlaceList from "./components/PlaceList";
+import Description from './components/Description'
 
 const UserSection = () => {
   const mapRef = useRef(null);
@@ -17,8 +18,10 @@ const UserSection = () => {
   const [segment, setSegment] = useState([]);
   const [list, setList] = useState([]);
   const routeLayer = useRef(null);
+  const [planner, setPlanner] = useState([])
+  const [userLocation, setUserLocation] = useState(null)
 
-    const top10Places = [
+  const top10Places = [
     "Perez Park",
     "SM City Lucena",
     "Pacific Mall Lucena",
@@ -31,19 +34,32 @@ const UserSection = () => {
     "Buddy's Pizza"
   ];
 
-  
-      const fuse = useMemo(
-        () =>
-            new Fuse(places, {
-                keys: ["name", "description", "tags", "address.barangay", "address.purok"],
-                threshold: 0.3,
-            }),
-        []
-    );
+
+  const fuse = useMemo(
+    () =>
+      new Fuse(places, {
+        keys: ["name", "description", "tags", "address.barangay", "address.purok"],
+        threshold: 0.3,
+      }),
+    []
+  );
 
   const fetch = async () => {
-    const data = await fetchPlaces(placeInput);
-    let initlist = data.map((e) => e.coordinates);
+    await fetchCurrentLocation(setUserLocation)
+    let initlist = [userLocation]
+    console.log('This is User Location', userLocation)
+
+    planner.map((planner) => {
+
+      for (let place of places) {
+        if (planner === place.name) {
+          initlist.push([place.coordinates.lng, place.coordinates.lat]);
+          console.log('gumana')
+        }
+      }
+    })
+
+
 
     setCoords(initlist);
     await fetchCoordinates(initlist, setList);
@@ -84,14 +100,14 @@ const UserSection = () => {
     console.log("List:", list);
 
     if (index === 0) {
-    setSegment(list.slice(0, findClosestIndex(list, coords[index])))
-    console.log("segment 1:")
-  }else if (index === coords.length) {
-    setSegment(list.slice(findClosestIndex(list, coords[index-1], )))
-    console.log("segment 3:")
-  } else {
-    setSegment(findClosestIndex(list, coords[index]), findClosestIndex(list, coords[index + 1]))
-    console.log("segment 2:")
+      setSegment(list.slice(0, findClosestIndex(list, coords[index])))
+      console.log("segment 1:")
+    } else if (index === coords.length) {
+      setSegment(list.slice(findClosestIndex(list, coords[index - 1],)))
+      console.log("segment 3:")
+    } else {
+      setSegment(findClosestIndex(list, coords[index]), findClosestIndex(list, coords[index + 1]))
+      console.log("segment 2:")
     }
   };
 
@@ -99,11 +115,11 @@ const UserSection = () => {
     if (segment && segment.length > 0) {
       showRoute();
     }
-  }, [segment]); 
+  }, [segment]);
 
   return (
     <main className="flex flex-row">
-      <div className="w-5/10 border-r-4 mr-5 flex flex-col items-center">
+      <div className="w-5/10 h-screen border-r-4 mr-5 flex flex-col items-center">
         <h1 className="text-6xl font-black mt-10">TARAVEL</h1>
         <h2 className="text-2xl font-bold w-3/5 text-center mb-5">
           "Life's too short to stay in one place"
@@ -124,27 +140,11 @@ const UserSection = () => {
             TRAVEL
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-y-5 pt-10 w-full h-77 justify-items-center overflow-auto">
-          {/* {coords.map((e) => {
-            let index = coords.indexOf(e);
-            return (
-              <div
-                className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center"
-                key={index}
-                onClick={() => {
-                }}
-              >
-                Route {index + 1}
-              </div>
-            );
-          })} */}
+        <Description setPlanner={setPlanner} planner={planner} />
 
-          <PlaceList />
-        </div>
 
-  
       </div>
-      <div className="w-full p-5 border-2 mt-2 mr-5 rounded-2xl">
+      <div className="w-full h-screen p-5 border-2 mt-2 mr-5 rounded-2xl">
         <RenderMap mapRef={mapRef} setMap={setMap} />
       </div>
     </main>

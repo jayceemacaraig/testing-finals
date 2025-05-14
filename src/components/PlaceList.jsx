@@ -1,19 +1,16 @@
-// PlaceList.jsx
 import React, { useState } from 'react';
 
 import places from '../places.json';
 
-const PlaceList = () => {
+const PlaceList = ({setPlanner, planner}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const placesPerPage = 5;
 
-  // Calculate total pages
   const totalPages = Math.ceil(places.length / placesPerPage);
-
-  // Get current page data
   const indexOfLastPlace = currentPage * placesPerPage;
   const indexOfFirstPlace = indexOfLastPlace - placesPerPage;
   const currentPlaces = places.slice(indexOfFirstPlace, indexOfLastPlace);
+
 
   const goToNextPage = () => {
     if (currentPage < totalPages) {
@@ -27,13 +24,22 @@ const PlaceList = () => {
     }
   };
 
+  const cardFunction = (name) => {
+    if (planner.includes(name)) {
+      window.alert('Already in the planner')
+    } else {
+      setPlanner([...planner, name])
+      console.log(name)
+    }
+  }
+
   return (
     <div className="max-w-3xl mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Lucena City Places</h1>
 
-      <ul className="space-y-4">
+      <ul className="space-y-4 grid grid-cols-2 gap-10">
         {currentPlaces.map((place, index) => (
-          <li key={index} className="p-4 border rounded shadow">
+          <li key={index} className="p-4 border rounded shadow" onClick={() => cardFunction(place.name)}>
             <h2 className="text-xl font-semibold">{place.name}</h2>
             <p className="text-gray-600">{place.description}</p>
             <p className="text-sm text-gray-500">{place.address.barangay}</p>
@@ -42,7 +48,6 @@ const PlaceList = () => {
         ))}
       </ul>
 
-      {/* Pagination controls */}
       <div className="flex justify-between items-center mt-6">
         <button
           onClick={goToPreviousPage}
@@ -63,6 +68,8 @@ const PlaceList = () => {
         >
           Next
         </button>
+
+        
       </div>
     </div>
   );
