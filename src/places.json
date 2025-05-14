@@ -3,8 +3,8 @@
         "name": "Perez Park",
         "description": "A relaxing park in the heart of Lucena City.",
         "coordinates": {
-            "lat": 13.9374,
-            "lng": 121.6159
+            "lat": 13.9287,
+            "lng": 121.6127
         },
         "address": {
             "barangay": "Barangay 4",
@@ -251,7 +251,7 @@
             "lng": 121.6134
         },
         "address": {
-            "barangay": "Barangay 2",
+            "barangay": "Barangay 4",
             "purok": "Quezon Avenue cor. ML Tagarao Street"
         },
         "tags": [
@@ -269,7 +269,7 @@
             "lng": 121.6132
         },
         "address": {
-            "barangay": "Barangay 4",
+            "barangay": "Barangay 3",
             "purok": "Quezon Avenue cor. ML Tagarao Street"
         },
         "tags": [
@@ -287,7 +287,7 @@
             "lng": 121.6132
         },
         "address": {
-            "barangay": "Barangay 1 Poblacion",
+            "barangay": "Barangay 3",
             "purok": "2886 Quezon Avenue"
         },
         "tags": [
@@ -344,7 +344,7 @@
             "lng": 121.6019
         },
         "address": {
-            "barangay": "Silangang Mayao",
+            "barangay": "Ilayang Iyam",
             "purok": "Love Street corner Gamboa Street"
         },
         "tags": [
@@ -420,7 +420,7 @@
             "lng": 121.6211
         },
         "address": {
-            "barangay": "Bocohan",
+            "barangay": "Mayao Crossing",
             "purok": "Lucena Diversion Road"
         },
         "tags": [
@@ -458,7 +458,7 @@
             "lng": 121.6127
         },
         "address": {
-            "barangay": "Barangay 6",
+            "barangay": "Barangay 3",
             "purok": "M.L. Tagarao Street corner Granja Street"
         },
         "tags": [
@@ -479,7 +479,7 @@
             "lng": 121.6050
         },
         "address": {
-            "barangay": "Barangay 3",
+            "barangay": "Ilayang Iyam",
             "purok": "Lopez Street"
         },
         "tags": [
@@ -536,7 +536,7 @@
             "lng": 121.6119
         },
         "address": {
-            "barangay": "Barangay 6",
+            "barangay": "Barangay 5",
             "purok": "Zamora Street corner Bonifacio Street"
         },
         "tags": [
@@ -631,7 +631,7 @@
             "lng": 121.6127
         },
         "address": {
-            "barangay": "Barangay 9",
+            "barangay": "Barangay 11",
             "purok": "Quezon Avenue Extension"
         },
         "tags": [
@@ -650,7 +650,7 @@
             "lng": 121.6125
         },
         "address": {
-            "barangay": "Barangay 9",
+            "barangay": "Barangay 11",
             "purok": "Quezon Avenue Extension"
         },
         "tags": [
@@ -669,7 +669,7 @@
             "lng": 121.6110
         },
         "address": {
-            "barangay": "Barangay 1 (Poblacion)",
+            "barangay": "Barangay 1",
             "purok": "Allarey Extention"
         },
         "tags": [
@@ -725,7 +725,7 @@
             "lng": 121.6145
         },
         "address": {
-            "barangay": "Barangay 6 (Poblacion)",
+            "barangay": "Barangay 6",
             "purok": "C.M. Recto Street"
         },
         "tags": [
@@ -764,7 +764,7 @@
             "lng": 121.6143
         },
         "address": {
-            "barangay": "Barangay 6 (Poblacion)",
+            "barangay": "Barangay 6",
             "purok": "C.M. Recto Street"
         },
         "tags": [
@@ -782,7 +782,7 @@
             "lng": 121.6146
         },
         "address": {
-            "barangay": "Barangay 6 (Poblacion)",
+            "barangay": "Barangay 6",
             "purok": "C.M. Recto Street"
         },
         "tags": [
@@ -800,7 +800,7 @@
             "lng": 121.6123
         },
         "address": {
-            "barangay": "Barangay 4 (Poblacion)",
+            "barangay": "Barangay 7",
             "purok": "Zamora Street"
         },
         "tags": [
@@ -818,7 +818,7 @@
             "lng": 121.6145
         },
         "address": {
-            "barangay": "Barangay 6 (Poblacion)",
+            "barangay": "Barangay 6",
             "purok": "C.M. Recto Street"
         },
         "tags": [
@@ -852,7 +852,7 @@
             "lng": 121.6020
         },
         "address": {
-            "barangay": "Ibabang Dupay",
+            "barangay": "Ibabang Iyam",
             "purok": "172 Old Manila South Road"
         },
         "tags": [
@@ -874,7 +874,7 @@
             "purok": "Merchan Street corner Profugo Street"
         },
         "tags": [
-            "department store",
+            "department store", 
             "supplies",
             "essentials",
             "household items",
@@ -957,5 +957,858 @@
             "materials",
             "sporting goods"
         ]
+    },
+    {
+        "name": "Museo de Lucena",
+        "description": "Offers an immersive journey through Lucena City's rich history and culture.",
+        "coordinates": {
+            "lat": 13.9365,
+            "lng": 121.6116
+        },
+        "address": {
+            "barangay": "Barangay 5",
+            "purok": "Corner of M.L. Tagarao and Allarey Streets"
+        },
+        "tags": [
+            "museum",
+            "history",
+            "culture",
+            "heritage",
+            "artifacts"
+        ]
+    },
+    {
+        "name": "Sampaguita Resort",
+        "description": "Family-friendly destination offering swimming pools, picnic areas, and event spaces",
+        "coordinates": {
+            "lat": 13.93624,
+            "lng": 121.5913
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": " Purok Damayan II"
+        },
+        "tags": [
+            "resort",
+            "family-friendly",
+            "swimming pools",
+            "picnic areas",
+            "event spaces"
+        ]
+    },
+    {
+        "name": "Del Maro Resort",
+        "description": "Family-friendly destination offering swimming pools, picnic areas, and event spaces",
+        "coordinates": {
+            "lat": 13.9269,
+            "lng": 121.5924
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": "Landing Road"
+        },
+        "tags": [
+            "resort",
+            "family-friendly",
+            "swimming pools",
+            "picnic areas",
+            "event spaces"
+        ]
+    },
+    {
+        "name": "Queen Mariett Island Nature Resort (Private Pool)",
+        "description": "Offers a serene escape with natural warm spring pools, private event spaces, ",
+        "coordinates": {
+            "lat": 13.9012,
+            "lng": 121.6101
+        },
+        "address": {
+            "barangay": "Barra",
+            "purok": "Barra Road"
+        },
+        "tags": [
+            "resort",
+            "private pool",
+            "natural warm springs",
+            "event spaces",
+            "nature escape"
+        ]
+    },
+    {
+        "name": "Quezon Adventure Hotel, Resort and Restaurant",
+        "description": "Features spacious accommodations, swimming pools, and the Green Nature Restaurant,",
+        "coordinates": {
+            "lat": 13.9614,
+            "lng": 121.6005
+        },
+        "address": {
+            "barangay": "Domoit",
+            "purok": "Maharlika Highway"
+        },
+        "tags": [
+            "hotel",
+            "resort",
+            "restaurant",
+            "swimming pools",
+            "accommodation",
+            "family-friendly"
+        ]
+    },
+    {
+        "name": "Quezon Convention Center",
+        "description": "A premier multi-purpose venue in Lucena City boasting a 7,000-seat capacity",
+        "coordinates": {
+            "lat": 13.9283,
+            "lng": 121.6137
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "purok": "Capitol Compound"
+        },
+        "tags": [
+            "convention center",
+            "event venue",
+            "multi-purpose",
+            "large capacity",
+            "conference",
+            "government building"
+        ]
+    },
+    {
+        "name": "Quezon Provincial Capitol",
+        "description": "A historic landmark constructed in 1908 on land donated by then-Governor Don Felimon Perez.",
+        "coordinates": {
+            "lat": 13.9288,
+            "lng": 121.6133
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "purok": "Capitol Compound"
+        },
+        "tags": [
+            "historic landmark",
+            "government building",
+            "heritage",
+            "historical site",
+            "architecture"
+        ]
+    },
+    {
+        "name": "Quezon Monument",
+        "description": "A profound tribute to President Manuel L. Quezon, located within the historic Perez Park. ",
+        "coordinates": {
+            "lat": 13.9276,
+            "lng": 121.6129
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "purok": "Purok Camia"
+        },
+        "tags": [
+            "monument",
+            "historical site",
+            "heritage",
+            "tribute",
+            "park",
+            "government building"
+        ]
+    },
+    {
+        "name": "Quezon District Jail",
+        "description": "Facility managed by the Bureau of Jail Management and Penology (BJMP)",
+        "coordinates": {
+            "lat": 13.9286,
+            "lng": 121.6144
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "purok": "Capitol Compound"
+        },
+        "tags": [
+            "correctional facility",
+            "government building",
+            "jail",
+            "security",
+            "public service"
+        ]
+    },
+    {
+        "name": "Lucena City Government Complex",
+        "description": "Serves as the central hub for the city's administrative operations.",
+        "coordinates": {
+            "lat": 13.9630,
+            "lng": 121.6346
+        },
+        "address": {
+            "barangay": "Mayao Kanluran",
+            "purok": "Diversion Road"
+        },
+        "tags": [
+            "government building",
+            "administrative center",
+            "public service",
+            "city hall",
+            "local government"
+        ]
+    },
+    {
+        "name": "Lucena City Police Station",
+        "description": "Part of the Quezon Police Provincial Office, serves as the primary law enforcement agency for Lucena City.",
+        "coordinates": {
+            "lat": 13.9362,
+            "lng": 121.6116
+        },
+        "address": {
+            "barangay": "Barangay 5",
+            "purok": "Corner of M.L. Tagarao and Allarey Street"
+        },
+        "tags": [
+            "police station",
+            "law enforcement",
+            "public safety",
+            "government building",
+            "security"
+        ]
+    },
+    {
+        "name": "Lucena City Police Station (Iyam Substation)",
+        "description": "Satellite facility of the Lucena City Police Station, serving the Ilayang Iyam",
+        "coordinates": {
+            "lat": 13.9340,
+            "lng": 121.6048
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": "M.L. Tagarao Street"
+        },
+        "tags": [
+            "police station",
+            "law enforcement",
+            "public safety",
+            "government building",
+            "security"
+        ]
+    },
+    {
+        "name": "Governor's Mansion",
+        "description": "Stands as a testament to the region's rich history and architectural elegance",
+        "coordinates": {
+            "lat": 13.9278,
+            "lng": 121.6119
+        },
+        "address": {
+            "barangay": "Barangay 8",
+            "purok": "Quezon Avenue"
+        },
+        "tags": [
+           "historic site",
+            "government building",
+            "architecture",
+            "heritage",
+            "cultural landmark",
+            "mansion"
+        ]
+    },
+    {
+        "name": "Saint Ferdinand Cathedral",
+        "description": "A revered Roman Catholic church and the seat of the Diocese of Lucena",
+        "coordinates": {
+            "lat": 13.9359,
+            "lng": 121.6124
+        },
+        "address": {
+            "barangay": "Barangay 5",
+            "purok": "Quezon Avenue"
+        },
+        "tags": [
+            "cathedral",
+            "church",
+            "historical site",
+            "religious",
+            "cultural landmark"
+        ]
+    },
+    {
+        "name": "Parish of the Shrine of Saint Jude",
+        "description": "A beacon of hope for countless devotees.",
+        "coordinates": {
+            "lat": 13.9175,
+            "lng": 121.6072
+        },
+        "address": {
+            "barangay": "Cotta",
+            "purok": "Cotta Road"
+        },
+        "tags": [
+            "church",
+            "parish",
+            "religious site",
+            "devotional",
+            "spiritual"
+        ]
+    },
+    {
+        "name": "Grace Church International",
+        "description": "Spirit-filled community dedicated to transforming lives through the Gospel of Jesus Christ.",
+        "coordinates": {
+            "lat": 13.9247,
+            "lng": 121.6113
+        },
+        "address": {
+            "barangay": "Cotta",
+            "purok": "Purok Bagong Pag-asa"
+        },
+        "tags": [
+            "church",
+            "Christianity",
+            "place of worship",
+            "faith community",
+            "praise"
+        ]
+    },
+    {
+        "name": "Iglesia ni Cristo (Lokal ng Lucena City)",
+        "description": "Offers a structured schedule of worship services designed to accommodate the spiritual needs ",
+        "coordinates": {
+            "lat": 13.9286,
+            "lng": 121.6121
+        },
+        "address": {
+            "barangay": "Barangay 8",
+            "purok": "Quezon Avenue"
+        },
+        "tags": [
+            "church",
+            "religious site",
+            "worship services",
+            "spiritual",
+            "Iglesia ni Cristo"
+        ]
+    },
+    {
+        "name": "Manuel S. Enverga University Foundation",
+        "description": "Established in 1947, a premier private institution renowned for its commitment to academic excellence.",
+        "coordinates": {
+            "lat": 13.9494,
+            "lng": 121.6203
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "University Site"
+        },
+        "tags": [
+            "university",
+            "academic excellence",
+            "higher education",
+            "private institution",
+            "education",
+            "schools"
+        ]
+    },
+    {
+        "name": "Dalubhasaan ng Lungsod ng Lucena",
+        "description": "Formerly known as the City College of Lucena, is the first local college in Quezon Province operated and managed by the City Government of Lucena.",
+        "coordinates": {
+            "lat": 13.9466,
+            "lng": 121.5895
+        },
+        "address": {
+            "barangay": "Isabang",
+            "purok": "City Hall Annex Compound"
+        },
+        "tags": [
+            "college",
+            "higher education",
+            "local institution",
+            "academic excellence",
+            "education",
+            "schools"
+        ]
+    },
+    {
+        "name": "Quezon National High School",
+        "description": "Established in October 1902 by Thomasite Aubrey Boyles as Tayabas High School. One of the oldest and largest public secondary schools in the Philippines",
+        "coordinates": {
+            "lat": 13.9328,
+            "lng": 121.6054
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": "M.L. Tagarao Street"
+        },
+        "tags": [
+            "high school",
+            "secondary school",
+            "historical school",
+            "education",
+            "schools"
+        ]
+    },
+    {
+        "name": "Maryhill College",
+        "description": "Catholic Marian educational institution founded in 1938",
+        "coordinates": {
+            "lat": 13.9363,
+            "lng": 121.6129
+        },
+        "address": {
+            "barangay": "Barangay 5",
+            "purok": "M.L. Tagarao Street"
+        },
+        "tags": [
+            "college",
+            "catholic institution",
+            "higher education",
+            "marian school",
+            "education",
+            "schools"
+        ]
+    },
+    {
+        "name": "Sacred Heart College",
+        "description": "Founded on April 27, 1884 and established by Hermana Fausta Labrador. The oldest Catholic institution in Quezon Province.",
+        "coordinates": {
+            "lat": 13.9409,
+            "lng": 121.6159
+        },
+        "address": {
+            "barangay": "Barangay 11",
+            "purok": "1 Merchan Street"
+        },
+        "tags": [
+            "college",
+            "catholic institution",
+            "higher education",
+            "historical school",
+            "education",
+            "education"
+        ]
+    },
+    {
+        "name": "Lucena Fish Port Complex",
+        "description": "A vital hub for the region's fishing industry",
+        "coordinates": {
+            "lat": 13.9038,
+            "lng": 121.6219
+        },
+        "address": {
+            "barangay": "Dalahican",
+            "purok": "Purok 3A"
+        },
+        "tags": [
+            "fishing industry",
+            "port",
+            "commercial hub",
+            "marine trade",
+            "economic zone"
+        ]
+    },
+    {
+        "name": "PNR (Lucena Station)",
+        "description": "Established in 1913, it has served as a vital link in the Philippine National Railways (PNR) South Main Line",
+        "coordinates": {
+            "lat": 13.9270,
+            "lng": 121.6130
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "purok": "Gov. Constantino Street"
+        },
+        "tags": [
+            "terminal",
+            "train station",
+            "transportation hub",
+            "railway station",
+            "public transport"
+        ]
+    },
+    {
+        "name": "Supreme Lucena City Terminal",
+        "description": "Serves as a primary departure point for buses traveling between Lucena and Batangas City",
+        "coordinates": {
+            "lat": 13.9456,
+            "lng": 121.5915
+        },
+        "address": {
+            "barangay": "Isabang",
+            "purok": "Old Manila South Road"
+        },
+        "tags": [
+            "terminal",
+            "bus station",
+            "transportation hub",
+            "public transport",
+            "travel"
+        ]
+    },
+    {
+        "name": "Tayabas-Lucban Terminal",
+        "description": "A key transportation hub in Quezon Province, facilitating travel between Lucena City, Tayabas, and Lucban.",
+        "coordinates": {
+            "lat": 13.9613,
+            "lng": 121.6098
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "Lucena-Tayabas Road"
+        },
+        "tags": [
+            "terminal",
+            "transportation hub",
+            "bus station",
+            "public transport",
+            "travel"
+        ]
+    },
+    {
+        "name": "Lucena Grand Terminal",
+        "description": "Serves as a vital transit point for travelers heading to various destinations across CALABARZON, Metro Manila, and Bicol regions.",
+        "coordinates": {
+            "lat": 13.9584,
+            "lng": 121.6170
+        },
+        "address": {
+            "barangay": "Ilayang Dupay",
+            "purok": "Lucena Diversion Road"
+        },
+        "tags": [
+            "terminal",
+            "transit hub",
+            "bus station",
+            "public transport",
+            "travel"
+        ]
+    },
+    {
+        "name": "Tropical Diner",
+        "description": "Offers a vibrant dining experience featuring a diverse menu of flavorful dishes",
+        "coordinates": {
+            "lat": 13.9393,
+            "lng": 121.6131
+        },
+        "address": {
+            "barangay": "Barangay 1",
+            "purok": "23 Granja St."
+        },
+        "tags": [
+            "restaurant",
+            "dining",
+            "food",
+            "flavors",
+            "local cuisine"
+        ]
+    },
+    {
+        "name": "FARCARE Diagnostic Center and Medical Clinic",
+        "description": "Provides reliable medical diagnostics and expert consultation services, ",
+        "coordinates": {
+            "lat": 13.9397,
+            "lng": 121.6131
+        },
+        "address": {
+            "barangay": "Barangay 1",
+            "purok": "Hermana Fausta St., Granja St."
+        },
+        "tags": [
+            "medical clinic",
+            "diagnostic center",
+            "health services",
+            "consultation",
+            "healthcare"
+        ]
+    },
+    {
+        "name": "Happy Chicken",
+        "description": "Go-to spot for freshly prepared, flavorful chicken dishes and comforting meals.",
+        "coordinates": {
+            "lat": 13.9373,
+            "lng": 121.6119
+        },
+        "address": {
+            "barangay": "Barangay 3",
+            "purok": "Allarey Street"
+        },
+        "tags": [
+            "restaurant",
+            "chicken dishes",
+            "comfort food",
+            "fresh meals",
+            "dining",
+            "chicken"
+        ]
+    },
+    {
+        "name": "Tip Beez Bar & Food Hub",
+        "description": "Lively spot offering delicious food, refreshing drinks, and a vibrant ambiance",
+        "coordinates": {
+            "lat": 13.9376,
+            "lng": 121.6117
+        },
+        "address": {
+            "barangay": "Barangay 3",
+            "purok": "Allarey Street"
+        },
+        "tags": [
+            "bar",
+            "restaurant",
+            "comfort food",
+            "drinks",
+            "night out"
+        ]
+    },
+    {
+        "name": "The Green Bowl",
+        "description": "Fresh and healthy dining destination",
+        "coordinates": {
+            "lat": 13.9389,
+            "lng": 121.6125
+        },
+        "address": {
+            "barangay": "Barangay 1",
+            "purok": "Trinidad St."
+        },
+        "tags": [
+            "restaurant",
+            "healthy food",
+            "fresh dining",
+            "health-conscious",
+            "vegan"
+        ]
+    },
+    {
+        "name": "DadBod",
+        "description": "Offers a relaxed atmosphere with a menu full of hearty comfort food and refreshing drinks",
+        "coordinates": {
+            "lat": 13.9399,
+            "lng": 121.6138
+        },
+        "address": {
+            "barangay": "Barangay 11",
+            "purok": "67 Hermana Fausta St."
+        },
+        "tags": [
+            "bar",
+            "restaurant",
+            "comfort food",
+            "drinks",
+            "night out"
+        ]
+    },
+    {
+        "name": "Heartbeat Restobar Lucena",
+        "description": "Offering a variety of delicious drinks and a mouth-watering menu",
+        "coordinates": {
+            "lat": 13.9390,
+            "lng": 121.6131
+        },
+        "address": {
+            "barangay": "Barangay 1",
+            "purok": "Trinidad St."
+        },
+        "tags": [
+            "bar",
+            "restaurant",
+            "food",
+            "drinks",
+            "night out"
+        ]
+    },
+    {
+        "name": "Symoone Bar & Resto",
+        "description": "Offering a diverse selection of food and drinks, it’s the perfect place for a fun night out",
+        "coordinates": {
+            "lat": 13.9390,
+            "lng": 121.6130
+        },
+        "address": {
+            "barangay": "Barangay 1",
+            "purok": "Trinidad St."
+        },
+        "tags": [
+            "bar",
+            "restaurant",
+            "food",
+            "drinks",
+            "night out"
+        ]
+    },
+    {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "description": "Offers a peaceful and welcoming environment for spiritual growth. ",
+        "coordinates": {
+            "lat": 13.9432,
+            "lng": 121.6135
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "Manuel L Quezon Avenue"
+        },
+        "tags": [
+            "church",
+            "spiritual growth",
+            "Christianity",
+            "faith",
+            "worship"
+        ]
+    },
+    {
+        "name": "Lucena Holistic",
+        "description": "A wellness center dedicated to nurturing both mind and body.",
+        "coordinates": {
+            "lat": 13.9432,
+            "lng": 121.6139
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "Manuel L Quezon Avenue"
+        },
+        "tags": [
+            "wellness center",
+            "holistic health",
+            "mind and body",
+            "wellness",
+            "health",
+            "church"
+        ]
+    },
+    {
+        "name": "Luisa Cafe & Restaurant",
+        "description": "A charming spot offering a delightful blend of local and international flavors.",
+        "coordinates": {
+            "lat": 13.9429,
+            "lng": 121.6139
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "Manuel L Quezon Avenue"
+        },
+        "tags": [
+            "restaurant",
+            "cafe",
+            "local cuisine",
+            "international cuisine",
+            "dining",
+            "food"
+        ]
+    },
+    {
+        "name": "MJD Urban Escape Farm Resto",
+        "description": "A relaxing restaurant located in Bocohan, Lucena City.",
+        "coordinates": {
+        "lat": 13.9571, 
+        "lng": 121.5935
+        },
+        "address": {
+            "barangay": "Bocohan",
+            "purok": "near Inter-Global"
+        },
+        "tags": ["restaurant", "food"],
+        "image": "assets/image/Food&Resto/Buddys-Restaurant.jpg"
+    },
+    {
+        "name": "San Rafael the Archangel Parish",
+        "description": "A parish church situated in Dalahican, Lucena City.",
+        "coordinates": {
+        "lat": 13.9141, 
+        "lng": 121.6165
+        },
+        "address": {
+            "barangay": "Dalahican",
+            "purok": "Quezon Eco-Tourism-Cotta-Dalahican Port Road"
+        },
+        "tags": ["church"]
+    },
+    {
+        "name": "Hotel Rosita",
+        "description": "A hotel located in Domoit, Lucena City.",
+        "coordinates": {
+        "lat": 13.9615, 
+        "lng": 121.5996
+        },
+        "address": {
+            "barangay": "Domoit",
+            "purok": "Lucena Diversion Road"
+        },
+        "tags": ["hotel", "resort"]
+    },
+    {
+        "name": "Koi Cafe & Restaurant",
+        "description": "A cozy café and restaurant in Domoit, Lucena City.",
+        "coordinates": {
+        "lat": 13.9644, 
+        "lng": 121.602
+        },
+        "address": {
+            "barangay": "Domoit",
+            "purok": "Lucena Diversion Road"
+        },
+        "tags": ["cafe", "restaurant", "food"]
+    },
+    {
+        "name": "Diocesan Shrine of Our Lady of Peñafrancia",
+        "description": "A religious shrine located in Gulang-Gulang, Lucena City.",
+        "coordinates": {
+        "lat": 13.9562, 
+        "lng": 121.6064
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "Camia Streey"
+        },
+        "tags": ["church"]
+    },
+
+    {
+        "name": "Catalino's Café and Restaurant",
+        "description": "A dining spot located in Gulang-Gulang, Lucena City.",
+        "coordinates": {
+        "lat": 13.9725,
+        "lng": 121.6100
+        },
+        "address": {
+            "barangay": "Gulang-Gulang",
+            "purok": "2497 Villa Javierto"
+        },
+        "tags": ["restaurant", "cafe", "food"]
+    },
+    
+    {
+        "name": "St. Isidore Labrador Parish",
+        "description": "A church serving the Ibabang Dupay community in Lucena City.",
+        "coordinates": {
+        "lat": 13.9411, 
+        "lng": 121.6219
+        },
+        "address": {
+            "barangay": "Ibabang Dupay",
+            "purok": "Old Manila South Road"
+        },
+        "tags": ["church"]
+    },
+    {
+        "name": "Dupay Seventh Day Adventist Church",
+        "description": "An Adventist church in Ilayang Dupay, Lucena City.",
+        "coordinates": {
+        "lat": 13.9641, 
+        "lng": 121.6218
+        },
+        "address": {
+            "barangay": "Ilayang Dupay",
+            "purok": "Lucena Diversion Road"
+        },
+        "tags": ["church"]
+    },
+    {
+        "name": "Our Lady of Lourdes Parish",
+        "description": "A parish church in Ibabang Iyam, Lucena City.",
+        "coordinates": {
+        "lat": 13.9336,
+        "lng":  121.6044
+        },
+        "address": {
+            "barangay": "Ibabang Iyam",
+            "purok": "38 Nadres St."
+        },
+        "tags": ["church"]
     }
 ]

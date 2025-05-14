@@ -2,37 +2,49 @@ import { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-const RenderMap = ({ mapRef,setMap }) => {
-  useEffect(() => {
-    if (mapRef.current) return;
+const RenderMap = ({ mapRef, setMap, places }) => {
+    useEffect(() => {
+        if (mapRef.current) return; // Prevent reinitializing the map
 
-    const map = L.map("map").setView([13.93349, 121.60331], 16);
-    mapRef.current = map;
+        const map = L.map("map").setView([13.93349, 121.60331], 16); // Default center
+        mapRef.current = map;
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
 
-    L.marker([13.93349, 121.60331])
-      .addTo(map)
-      .bindPopup("Welcome to Lucena!")
-      .openPopup();
+        setMap(map);
+    }, [mapRef, setMap]);
 
-    setMap(map);
+    useEffect(() => {
+        if (!mapRef.current) {
+            console.error("Map is not initialized!");
+            return;
+        }
 
-    let popup = L.popup();
-    
-    function onMapClick(e) {
-      popup
-        .setLatLng(e.latlng)
-        .setContent(`[${[e.latlng.lng, e.latlng.lat]}]`)
-        .openOn(map);
-    }
+        const map = mapRef.current;
 
-    map.on("click", onMapClick);
-  }, []);
-  return <div id="map" style={{ height: "92vh", zIndex: 0, borderRadius: 12, border: '1px solid gray' }}></div>;
+
+        // Remove existing markers
+        map.eachLayer((layer) => {
+            if (layer instanceof L.Marker) {
+                map.removeLayer(layer);
+            }
+        });
+
+        // Add new markers
+        places.forEach((place) => {
+            if (place.coordinates && place.coordinates.lat && place.coordinates.lng) {
+                const marker = L.marker([place.coordinates.lat, place.coordinates.lng]).addTo(map);
+                marker.bindPopup(`<b>${place.name}</b><br>${place.description}`);
+            } else {
+                console.warn(`Invalid coordinates for place: ${place.name}`);
+            }
+        });
+    }, [places, mapRef]);
+
+    return <div id="map" style={{ height: "100%", width: "100%" }} />;
 };
 
 export default RenderMap;

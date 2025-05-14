@@ -6,54 +6,79 @@ import places from "./places.json";
 import RenderMap from "./components/RenderMap";
 import findClosestIndex from "./utils/findClosestIndex";
 import fetchCoordinates from "./utils/fetchCoordinates";
-import fetchPlaces from "./utils/fetchPlaces";
+import { fetchCurrentLocation, lng, lat } from "./utils/fetchCurrentLocation";
+import Description from "./components/Description";
+import SearchBar from "./components/SearchBar";
 
-const UserSection = () => {
+const App = () => {
   const mapRef = useRef(null);
   const [map, setMap] = useState(null);
   const [coords, setCoords] = useState([]);
-  const [numInput, setNumInput] = useState(3);
-  const [placeInput, setPlaceInput] = useState("Dalahican");
+  const [filteredPlaces, setFilteredPlaces] = useState(places);
   const [segment, setSegment] = useState([]);
   const [list, setList] = useState([]);
   const routeLayer = useRef(null);
-  const [startFunction, setStartFunction] = useState(false);
-  const [details, setDetails] = useState(null);
+  const [planner, setPlanner] = useState([]);
+  const [userLocation, setUserLocation] = useState([]);
+  const [start, setStart] = useState(false);
 
-    const top10Places = [
-    "Perez Park",
-    "SM City Lucena",
-    "Pacific Mall Lucena",
-    "Hachienda Inn",
-    "Lucena Fresh Air Hotel and Resort",
-    "Okazu Garden and Resort",
-    "El Coco Boutique Hotel",
-    "2205 Suites",
-    "Señoritas Mexinoy Kitchen",
-    "Buddy's Pizza"
-  ];
+  // const top10Places = [
+  //   "Perez Park",
+  //   "SM City Lucena",
+  //   "Pacific Mall Lucena",
+  //   "Hachienda Inn",
+  //   "Lucena Fresh Air Hotel and Resort",
+  //   "Okazu Garden and Resort",
+  //   "El Coco Boutique Hotel",
+  //   "2205 Suites",
+  //   "Señoritas Mexinoy Kitchen",
+  //   "Buddy's Pizza"
+  // ];
 
-  
-      const fuse = useMemo(
-        () =>
-            new Fuse(places, {
-                keys: ["name", "description", "tags", "address.barangay", "address.purok"],
-                threshold: 0.3,
-            }),
-        []
-    );
+  // const fuse = useMemo(
+  //   () =>
+  //     new Fuse(places, {
+  //       keys: ["name", "description", "tags", "address.barangay", "address.purok"],
+  //       threshold: 0.3,
+  //     }),
+  //   []
+  // );
 
-  const fetch = async () => {
-    const data = await fetchPlaces(numInput, placeInput);
-    let initlist = data.map((e) => e.coordinates);
+  const fetchPlanner = async () => {
+    let initlist = [userLocation];
+
+    planner.map((planner) => {
+      for (let place of places) {
+        if (planner === place.name) {
+          initlist.push([place.coordinates.lng, place.coordinates.lat]);
+        }
+      }
+    });
 
     setCoords(initlist);
-    setDetails(data);
-
     await fetchCoordinates(initlist, setList);
-    setStartFunction(true);
+    setStart(true);
   };
 
+  useEffect(() => {
+    fetchCurrentLocation();
+    setUserLocation([parseFloat(lng.toFixed(4)), parseFloat(lat.toFixed(4))]);
+  }, []);
+
+const showDirection = (index) => {
+  if (index === 1) {
+    setSegment(list.slice(0, findClosestIndex(list, coords[index])));
+    console.log(`Segment 0: Start to ${index}`);
+  } else if (index === coords.length - 1) {
+    setSegment(list.slice(findClosestIndex(list, coords[index])));
+    console.log(`Segment ${index}: ${index} to end`);
+  } else {
+    const startIdx = findClosestIndex(list, coords[index]);
+    const endIdx = findClosestIndex(list, coords[index + 1]);
+    setSegment(list.slice(startIdx, endIdx));
+    console.log(`Segment ${index}: ${index} to ${index + 1}`);
+  }
+};
 
 
   const showRoute = () => {
@@ -81,99 +106,40 @@ const UserSection = () => {
     routeLayer.current = layer;
   };
 
-  const buttonFunction = (index) => {
-    console.log("index:", index);
-    console.log("coordinate target 1:", coords[index]);
-    console.log("coordinate target 2:", coords[index + 1]);
-    console.log("coordinates:", coords)
-    console.log("List:", list);
-
-    if (index === 0) {
-    setSegment(list.slice(0, findClosestIndex(list, coords[index])))
-    console.log("segment 1:")
-  }else if (index === coords.length) {
-    setSegment(list.slice(findClosestIndex(list, coords[index-1], )))
-    console.log("segment 3:")
-  } else {
-    setSegment(findClosestIndex(list, coords[index]), findClosestIndex(list, coords[index + 1]))
-    console.log("segment 2:")
-    }
-  };
-
   useEffect(() => {
     if (segment && segment.length > 0) {
       showRoute();
     }
-  }, [segment]); 
+  }, [segment]);
 
   return (
     <main className="flex flex-row">
-      <div className="w-5/10 border-r-4 mr-5 flex flex-col items-center">
+      <div className="w-5/10 h-screen border-r-4 mr-5 flex flex-col items-center">
         <h1 className="text-6xl font-black mt-10">TARAVEL</h1>
         <h2 className="text-2xl font-bold w-3/5 text-center mb-5">
           "Life's too short to stay in one place"
         </h2>
         <div className="flex flex-col gap-5 w-full items-center pb-10 border-b-5 shadow-2xl">
-          <input
-            onChange={(e) => {
-              setNumInput(e.target.value);
-            }}
-            value={numInput}
-            placeholder="Put the number of places you want to visit"
-            className="border-2 px-5 rounded-xl w-4/5 text-2xl placeholder-shown:text-sm placeholder-shown:py-2 "
-          />
-          <input
-            onChange={(e) => {
-              setPlaceInput(e.target.value);
-            }}
-            value={placeInput}
-            placeholder="Put the places you want to visit"
-            className="border-2 px-5 rounded-xl w-4/5 text-2xl placeholder-shown:text-sm placeholder-shown:py-2"
-          />
+        <SearchBar setFilteredPlaces={setFilteredPlaces} />
           <button
             className="px-5 py-2 bg-blue-500 shadow-xl text-white font-black rounded-4xl text-xl hover:bg-blue-800"
-            onClick={fetch}
+            onClick={fetchPlanner}
           >
             TRAVEL
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-y-5 pt-10 w-full h-77 justify-items-center overflow-auto">
-          {coords.map((e) => {
-            let index = coords.indexOf(e);
-            return (
-              <div
-                className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center"
-                key={index}
-                onClick={() => {
-                  buttonFunction(index);
-                }}
-              >
-                Route {index + 1}
-              </div>
-            );
-          })}
-
-          {/* <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div>
-          <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div>
-          <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div>
-          <div className="w-40 h-40 border-2 rounded-xl bg-amber-50 text-center content-center">Testing</div> */}
-        </div>
-
-        {/* <div className="w-70 h-100 border-2 rounded-xl bg-red-500 fixed bottom-1 left-125 z-10 p-5">
-          <h1>Route Details</h1>
-          <hr></hr>
-          <h1>Route 1</h1>
-          <div>
-            <h2>Distance</h2>
-            <h2>Durations</h2>
-          </div>
-        </div> */}
+        <Description
+          setPlanner={setPlanner}
+          planner={planner}
+          start={start}
+          showDirection={showDirection}
+        />
       </div>
-      <div className="w-full p-5 border-2 mt-2 mr-5 rounded-2xl">
-        <RenderMap mapRef={mapRef} setMap={setMap} />
+      <div className="w-full h-screen p-5 border-2 mt-2 mr-5 rounded-2xl">
+        <RenderMap mapRef={mapRef} setMap={setMap} places={filteredPlaces} userLocation={userLocation}/>
       </div>
     </main>
   );
 };
 
-export default UserSection;
+export default App;
