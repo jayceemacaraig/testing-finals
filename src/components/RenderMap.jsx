@@ -5,8 +5,7 @@ import "leaflet/dist/leaflet.css";
 const RenderMap = ({ mapRef, setMap, places }) => {
     useEffect(() => {
         if (mapRef.current) return; // Prevent reinitializing the map
-
-        const map = L.map("map").setView([13.93349, 121.60331], 16); // Default center
+        const map = L.map("map").setView([13.9359, 121.6124], 16); // Default center
         mapRef.current = map;
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

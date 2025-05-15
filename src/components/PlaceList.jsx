@@ -24,14 +24,14 @@ const PlaceList = ({ setPlanner, planner }) => {
     }
   };
 
-  const cardFunction = (name) => {
-    if (planner.includes(name)) {
-      window.alert("Already in the planner");
-    } else {
-      setPlanner([...planner, name]);
-      console.log(name);
-    }
+  const AddtoPlanner = (name) => {
+    setPlanner((prev) => [...prev, name]);
   };
+
+  const removeFromPlanner = (name) => {
+  setPlanner((prev) => prev.filter((place) => place !== name));
+};
+
 
   const handlers = useSwipeable({
     onSwipedLeft: goToNextPage,
@@ -51,31 +51,52 @@ const PlaceList = ({ setPlanner, planner }) => {
         <button
           onClick={goToPreviousPage}
           disabled={currentPage === 1}
-        className= "text-5xl px-2 rounded disabled:opacity-50"
+          className="text-5xl px-2 rounded disabled:opacity-50"
         >
           &lt;
         </button>
 
         <div {...handlers}>
           <ul className="py-5 grid grid-cols-2 gap-5 content-center">
-            {currentPlaces.map((place, index) => (
-              <li
-                key={index}
-                className="p-4 border rounded shadow-lg w-40 h-20 text-center "
-                onClick={() => cardFunction(place.name)}
-              >
-                <h2 className="text-xl shrink-text font-semibold">
-                  {place.name}
-                </h2>
-              </li>
-            ))}
+            {currentPlaces.map((place, index) => {
+              const isAdded = planner.includes(place.name);
+
+              return (
+                <li
+                  key={index}
+                  className="p-1 border rounded shadow-lg w-40 h-20 text-center "
+                  onClick={()=>{}}
+                >
+                  <h2 className="text-xl shrink-text font-semibold">
+                    {place.name}
+                  </h2>
+
+                  <div className="flex flex-row justify-center gap-2 mt-2">
+                    <button
+                      className="py-1 px-2 bg-green-400 disabled:bg-gray-400 text-white rounded-xl cursor-pointer"
+                      onClick={() => AddtoPlanner(place.name)}
+                      disabled={isAdded}
+                    >
+                      {isAdded ? "Added" : "Add"}
+                    </button>
+                    <button
+                      className="py-1 px-2 bg-red-600 disabled:bg-red-400 text-white rounded-xl cursor-pointer"
+                      onClick={() => removeFromPlanner(place.name)}
+                      disabled={!isAdded}
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
         <button
           onClick={goToNextPage}
           disabled={currentPage === totalPages}
-          className= "text-5xl px-2 rounded disabled:opacity-50"
+          className="text-5xl px-2 rounded disabled:opacity-50"
         >
           &gt;
         </button>
