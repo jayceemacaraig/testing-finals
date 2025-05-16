@@ -43,7 +43,7 @@ const RenderMap = ({ mapRef, setMap, places }) => {
         });
     }, [places, mapRef]);
 
-    return <div id="map" style={{ height: "100%", width: "100%" }} />;
+    return <div id="map" style={{ height: "100%", width: "115%" }} />;
 };
 
 export default RenderMap;

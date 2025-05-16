@@ -1,104 +1,77 @@
-import React, { useState } from "react";
-import { useSwipeable } from "react-swipeable";
+import L from "leaflet";
 
-const PlaceList = ({ setPlanner, planner,filteredPlaces }) => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const placesPerPage = 4;
-
-  const totalPages = Math.ceil(filteredPlaces.length / placesPerPage);
-  const indexOfLastPlace = currentPage * placesPerPage;
-  const indexOfFirstPlace = indexOfLastPlace - placesPerPage;
-  const currentPlaces = filteredPlaces.slice(indexOfFirstPlace, indexOfLastPlace);
-
-  const goToNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage((prev) => prev + 1);
-    }
-  };
-
-  const goToPreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage((prev) => prev - 1);
-    }
-  };
-
+const PlaceList = ({
+  setPlanner,
+  planner,
+  filteredPlaces,
+  map,
+  fetchPlanner,
+}) => {
   const AddtoPlanner = (name) => {
     setPlanner((prev) => [...prev, name]);
   };
 
   const removeFromPlanner = (name) => {
-  setPlanner((prev) => prev.filter((place) => place !== name));
-};
-
-  const handlers = useSwipeable({
-    onSwipedLeft: goToNextPage,
-    onSwipedRight: goToPreviousPage,
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
-
-  
+    setPlanner((prev) => prev.filter((place) => place !== name));
+  };
 
   return (
-    <div className="max-w-3xl mx-auto p-4 flex flex-col">
-      <h1 className="text-2xl font-bold mb-2">Lucena City Places</h1>
-      <span className="text-gray-700 self-center">
-        Page {currentPage} of {totalPages}
-      </span>
+    <div className="max-w-3xl items-center py-4 flex flex-col">
+      <h1 className="text-2xl font-bold mb-2 ml-5 self-start">Recommendations</h1>
 
-      <div className="flex flex-row justify-center gap-5">
-        <button
-          onClick={goToPreviousPage}
-          disabled={currentPage === 1}
-          className="text-5xl px-2 rounded disabled:opacity-50"
-        >
-          &lt;
-        </button>
-
-        <div {...handlers}>
-          <ul className="py-5 grid grid-cols-2 gap-5 content-center">
-            {currentPlaces.map((place, index) => {
+      <div className="flex flex-col justify-between gap-5">
+        <div>
+            {filteredPlaces.length === 0 ? (<div className="h-70 w-full content-center text-2xl">No Results</div>)
+          :(<ul className="px-2 grid grid-cols-2 gap-5 overflow-y-scroll h-70">
+            {filteredPlaces.map((place, index) => {
               const isAdded = planner.includes(place.name);
 
               return (
-                <li
+                <div
+                  className="bg-white rounded-xl shadow-xl/25 p-3 max-w-[500px] h-45 select-none flex flex-col items-center"
                   key={index}
-                  className="p-1 border rounded shadow-lg w-40 h-20 text-center "
-                  onClick={()=>{}}
+                  onClick={() => {
+                    map.setView(
+                      [place.coordinates.lat, place.coordinates.lng],
+                      19
+                    );
+                    L.popup()
+                      .setLatLng([place.coordinates.lat, place.coordinates.lng])
+                      .setContent(
+                        `<b>${place.name}</b><br>${place.description}`
+                      )
+                      .openOn(map);
+                  }}
                 >
-                  <h2 className="text-xl shrink-text font-semibold">
+                  <img
+                    className="w-[180px] h-[90px] object-cover rounded-lg mb-2"
+                    src={place.image}
+                    alt="Pacific Mall"
+                  />
+                  <p className="text-center text-xs font-semibold mb-2">
                     {place.name}
-                  </h2>
-
-                  <div className="flex flex-row justify-center gap-2 mt-2">
-                    <button
-                      className="py-1 px-2 bg-green-400 disabled:bg-gray-400 text-white rounded-xl cursor-pointer"
-                      onClick={() => AddtoPlanner(place.name)}
-                      disabled={isAdded}
-                    >
-                      {isAdded ? "Added" : "Add"}
-                    </button>
-                    <button
-                      className="py-1 px-2 bg-red-600 disabled:bg-red-400 text-white rounded-xl cursor-pointer"
-                      onClick={() => removeFromPlanner(place.name)}
-                      disabled={!isAdded}
-                    >
-                      Delete
-                    </button>
-                  </div>
-                </li>
+                  </p>
+                  <button
+                    className="text-xs rounded-full px-6 py-1 block mx-auto disabled:cursor-not-allowed bg-green-400 disabled:bg-gray-400 text-white"
+                    onClick={() => AddtoPlanner(place.name)}
+                    disabled={isAdded}
+                  >
+                    {isAdded ? "Added" : "Add"}
+                  </button>
+                </div>
               );
             })}
-          </ul>
+          </ul>)}
         </div>
 
-        <button
-          onClick={goToNextPage}
-          disabled={currentPage === totalPages}
-          className="text-5xl px-2 rounded disabled:opacity-50"
-        >
-          &gt;
-        </button>
+        <div className="flex flex-row absolute bottom-0 w-full mb-5 items-center justify-center backdrop-blur-xs pt-3">
+          <button
+            onClick={fetchPlanner}
+            className="px-5 py-2 w-4/5 font-bold bg-purple-500 hover:bg-purple-700 text-white text-sm rounded-md cursor-pointer"
+          >
+            Start Travel
+          </button>
+        </div>
       </div>
     </div>
   );
