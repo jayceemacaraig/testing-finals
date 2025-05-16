@@ -16,7 +16,7 @@ import createNumberedMarker from "./utils/createNumberedMarker";
 import Notif from "./components/Notif";
 import { RiContactsBookLine } from "react-icons/ri";
 
-const App = () => {
+const MainPage = () => {
   const mapRef = useRef(null);
   const [map, setMap] = useState(null);
   const [coords, setCoords] = useState([]);
@@ -312,4 +312,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MainPage;
