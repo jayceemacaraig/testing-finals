@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const fetchCoordinates = async (coords, setList) => {
+const fetchCoordinates = async (coords, setList, setStart) => {
   const apiKey = "5b3ce3597851110001cf624862a340fdb7724e99ae0b640191e2a890";
 
   try {
@@ -24,6 +24,7 @@ const fetchCoordinates = async (coords, setList) => {
     
     const initList = response.data.features[0].geometry.coordinates;
     setList(initList);
+    setStart(true);
     console.log("Request Data", response.data);
 
 

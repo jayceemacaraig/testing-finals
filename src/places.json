@@ -2,6 +2,7 @@
     {
         "name": "Perez Park",
         "description": "A relaxing park in the heart of Lucena City.",
+        "image": "assets/images/park/perez-park.PNG",
         "coordinates": {
             "lat": 13.9287,
             "lng": 121.6127
@@ -19,9 +20,10 @@
     {
         "name": "SM City Lucena",
         "description": "Lucena's major shopping destination.",
+        "image": "assets/images/malls/sm-lucena.png",
         "coordinates": {
-            "lat": 13.9408,
-            "lng": 121.6244
+            "lat": 13.9411,
+            "lng":  121.6239
         },
         "address": {
             "barangay": "Ibabang Dupay",
@@ -37,6 +39,7 @@
     {
         "name": "Pacific Mall Lucena",
         "description": " Premier shopping destination offering a wide range of shops, dining options, and entertainment",
+        "image": "assets/images/malls/pacific-mall.png",
         "coordinates": {
             "lat": 13.9371,
             "lng": 121.6089
@@ -57,6 +60,7 @@
     {
         "name": "Hachienda Inn",
         "description": "Lucena's top spot for dining and relaxation.",
+        "image": "assets/images/restaurants/hacienda-inn.PNG",
         "coordinates": {
             "lat": 13.9333,
             "lng": 121.6127
@@ -75,6 +79,7 @@
     {
         "name": "Cafe Antigua",
         "description": "Offers variety of flavorful dishes!",
+        "image": "assets/images/restaurants/antigua.png",
         "coordinates": {
             "lat": 13.9350,
             "lng": 121.6132
@@ -93,6 +98,7 @@
     {
         "name": "Buddy's Pizza",
         "description": "Known for its signature Filipino dishes.",
+        "image": "assets/images/restaurants/buddy-restaurant.PNG",
         "coordinates": {
             "lat": 13.9312,
             "lng": 121.6125
@@ -112,6 +118,7 @@
     {
         "name": "Lugaw Queen",
         "description": "Go-to spot for delicious Filipino comfort food!",
+        "image": "assets/images/restaurants/lugaw-queen.PNG",
         "coordinates": {
             "lat": 13.9335,
             "lng": 121.6130
@@ -130,6 +137,7 @@
     {
         "name": "Señoritas Mexinoy Kitchen",
         "description": "A vibrant restaurant blending Mexican and Filipino flavors!",
+        "image": "assets/images/restaurants/senioritas-mexinoy.PNG",
         "coordinates": {
             "lat": 13.9402,
             "lng": 121.6067
@@ -149,6 +157,7 @@
     {
         "name": "Slash Restaurant",
         "description": "Top spot for a variety of delicious dishes",
+        "image": "assets/images/restaurants/slash-restaurant.PNG",
         "coordinates": {
             "lat": 13.9351,
             "lng": 121.6115
@@ -167,6 +176,7 @@
     {
         "name": "Eduvigis Coffee Bar and Restaurant",
         "description": "Fresh coffee, hearty meals, and a cozy gathering spot.",
+        "image": "assets/images/restaurants/eduvigis.PNG",
         "coordinates": {
             "lat": 13.9334,
             "lng": 121.6118
@@ -186,6 +196,7 @@
     {
         "name": "Isaiah's Kitchen",
         "description": "Perfect spot for casual dining, social gatherings, or a cozy moment to relax.",
+        "image": "assets/images/restaurants/isaiah-kitchen.PNG",
         "coordinates": {
             "lat": 13.9341,
             "lng": 121.6116
@@ -208,6 +219,7 @@
     {
         "name": "Jollibee",
         "description": "Famous for Filipino-style spaghetti, crispy Chickenjoy, and sweet desserts",
+        "image": "assets/images/restaurants/jollibee.png",
         "coordinates": {
             "lat": 13.9359,
             "lng": 121.6132
@@ -227,6 +239,7 @@
     {
         "name": "McDonald's",
         "description": "Offers classic burgers, fries, breakfast options, and fried chicken",
+        "image": "assets/images/restaurants/mcdo.PNG",
         "coordinates": {
             "lat": 13.9364,
             "lng": 121.6133
@@ -246,6 +259,7 @@
     {
         "name": "Chowking",
         "description": "Serves Chinese-Filipino dishes such as dim sum, Chao Fan rice bowls, and noodle soups.",
+        "image": "assets/images/restaurants/chowking.png",
         "coordinates": {
             "lat": 13.9367,
             "lng": 121.6134
@@ -264,6 +278,7 @@
     {
         "name": "KFC",
         "description": "Known for its crispy fried chicken, rice bowls, and sides",
+        "image": "assets/images/restaurants/kfc.PNG",
         "coordinates": {
             "lat": 13.9367,
             "lng": 121.6132
@@ -282,6 +297,7 @@
     {
         "name": "Greenwich Pizza",
         "description": "Specializes in pizzas, pasta, and rice meals, ideal for family and group dining.",
+        "image": "assets/images/restaurants/greenwich.PNG",
         "coordinates": {
             "lat": 13.9371,
             "lng": 121.6132
@@ -301,6 +317,7 @@
     {
         "name": "Red Ribbon",
         "description": "Offers cakes, pastries, and light meals, perfect for desserts and celebrations.",
+        "image": "assets/images/restaurants/red-ribbon.png",
         "coordinates": {
             "lat": 13.9369,
             "lng": 121.6132
@@ -319,6 +336,7 @@
     {
         "name": "Lucena Fresh Air Hotel and Resort",
         "description": "Relaxing retreat offering spacious accommodations, refreshing swimming pools, serene gardens, and exceptional dining options.",
+        "image": "assets/images/hotels-resorts/fresh-air.png",
         "coordinates": {
             "lat": 13.9435,
             "lng": 121.5933
@@ -339,6 +357,7 @@
     {
         "name": "Okazu Garden and Resort",
         "description": "Serene haven featuring lush gardens, elegant accommodations, a rejuvenating spa, and exquisite dining experiences.",
+        "image": "assets/images/hotels-resorts/okazu.PNG",
         "coordinates": {
             "lat": 13.9412,
             "lng": 121.6019
@@ -358,6 +377,7 @@
     {
         "name": "Tourist Hotel",
         "description": "Enjoy affordable comfort with air-conditioned rooms, free Wi-Fi, and excellent service for a relaxing stay",
+        "image": "assets/images/hotels-resorts/tourists.PNG",
         "coordinates": {
             "lat": 13.9365,
             "lng": 121.5986
@@ -377,6 +397,7 @@
     {
         "name": "Urbantel Hotel",
         "description": "Experience comfort and convenience with modern amenities, budget-friendly rooms, and easy access to popular attractions.",
+        "image": "assets/images/hotels-resorts/urbantel.PNG",
         "coordinates": {
             "lat": 13.9322,
             "lng": 121.6134
@@ -396,6 +417,7 @@
     {
         "name": "Citilink Hotel",
         "description": "Enjoy easy access to shopping, dining, and entertainment options",
+        "image": "assets/images/hotels-resorts/citilink.PNG",
         "coordinates": {
             "lat": 13.9416,
             "lng": 121.6236
@@ -415,6 +437,7 @@
     {
         "name": "Loxley Hotel",
         "description": "Offers affordable accommodations with flexible hourly rates, making it ideal for short stays or quick rests. ",
+        "image": "assets/images/hotels-resorts/loxley.png",
         "coordinates": {
             "lat": 13.9226,
             "lng": 121.6211
@@ -434,6 +457,7 @@
     {
         "name": "GSR Place",
         "description": "Offers stylish, fully equipped rooms perfect for short stays or longer visits.",
+        "image": "assets/images/hotels-resorts/gsr.PNG",
         "coordinates": {
             "lat": 13.9341,
             "lng": 121.6070
@@ -453,6 +477,7 @@
     {
         "name": "Queen Margarette Hotel - Downtown",
         "description": "Offers comfortable, air-conditioned rooms with modern amenities, near local attractions, and excellent services",
+        "image": "assets/images/hotels-resorts/queen-margarette.png",
         "coordinates": {
             "lat": 13.9370,
             "lng": 121.6127
@@ -474,6 +499,7 @@
     {
         "name": "Hotel Kbartolo",
         "description": "Offers a family-friendly atmosphere with spacious, air-conditioned rooms featuring kitchenettes, private bathrooms, and balconies.",
+        "image": "assets/images/hotels-resorts/kbartolo.PNG",
         "coordinates": {
             "lat": 13.9376,
             "lng": 121.6050
@@ -492,7 +518,8 @@
     },
     {
         "name": "Diamond Resort and Hotel",
-        "description": "Offers a Mediterranean-inspired ambiance with luxurious accommodations and a swimming pool, ",
+        "description": "Offers a Mediterranean-inspired ambiance with luxurious accommodations and a swimming pool.",
+        "image": "assets/images/hotels-resorts/diamond-resort.PNG",
         "coordinates": {
             "lat": 13.9408,
             "lng": 121.6224
@@ -512,6 +539,7 @@
     {
         "name": "Meaco Royal Hotel",
         "description": "Offers clean, spacious rooms with free Wi-Fi, air conditioning, and 24-hour front desk service",
+        "image": "assets/images/hotels-resorts/meaco.png",
         "coordinates": {
             "lat": 13.9324,
             "lng": 121.6126
@@ -530,7 +558,8 @@
     },
     {
         "name": "Sir Josh Hotel",
-        "description": "Offers basic accommodations with air-conditioned rooms, free Wi-Fi, and a shared pantry,",
+        "description": "Offers basic accommodations with air-conditioned rooms, free Wi-Fi, and a shared pantry.",
+        "image": "assets/images/hotels-resorts/sir-josh.PNG",
         "coordinates": {
             "lat": 13.9343,
             "lng": 121.6119
@@ -550,6 +579,7 @@
     {
         "name": "Lady Luck Hotel",
         "description": "Offers no-frills, budget-friendly rooms with air conditioning and basic amenities",
+        "image": "assets/images/hotels-resorts/lady-luck.PNG",
         "coordinates": {
             "lat": 13.9368,
             "lng": 121.6103
@@ -569,6 +599,7 @@
     {
         "name": "El Coco Boutique Hotel",
         "description": "Offers a tropical-chic retreat, a rooftop SkyDeck Café Lounge, and a prime location just across from SM City Lucena,",
+        "image": "assets/images/hotels-resorts/el-coco.PNG",
         "coordinates": {
             "lat": 13.9413,
             "lng": 121.6238
@@ -588,6 +619,7 @@
     {
         "name": "2205 Suites",
         "description": "Offers modern, spacious rooms with kitchenettes, private balconies, and a rooftop pool",
+        "image": "assets/images/hotels-resorts/two-two-zero-five-suites.PNG",
         "coordinates": {
             "lat": 13.9408,
             "lng": 121.6079
@@ -607,6 +639,7 @@
     {
         "name": "Lucena MMG General Hospital",
         "description": "Offering 24/7 emergency care, dialysis, imaging, surgery, and specialized services like cardiology, pulmonary, and physical therapy. ",
+        "image": "assets/images/hospitals/lucena-mmg.PNG",
         "coordinates": {
             "lat": 13.9450,
             "lng": 121.6309
@@ -626,6 +659,7 @@
     {
         "name": "Quezon Memorial Hospital",
         "description": "Government-run medical facility providing a wide range of healthcare services including emergency care, surgery, maternal and child health, and specialized treatments.",
+        "image": "assets/images/hospitals/quezon-memorial-PNG",
         "coordinates": {
             "lat": 13.9420,
             "lng": 121.6127
@@ -645,6 +679,7 @@
     {
         "name": "Quezon Medical Center",
         "description": "Government-run hospital providing a wide range of healthcare services including emergency care, surgery, maternal and child health, and specialized treatments.",
+        "image": "assets/images/hospitals/quezon-medical.PNG",
         "coordinates": {
             "lat": 13.9422,
             "lng": 121.6125
@@ -664,6 +699,7 @@
     {
         "name": "Mount Carmel Diocesan General Hospital",
         "description": "Private Catholic hospital offering a wide range of medical services including emergency care, laboratory, pharmacy, CT scan and more",
+        "image": "assets/images/hospitals/mt-carmet.PNG",
         "coordinates": {
             "lat": 13.9407,
             "lng": 121.6110
@@ -683,6 +719,7 @@
     {
         "name": "St. Anne General Hospital Inc.",
         "description": "Private healthcare facility offering a wide range of medical services including internal medicine, surgery, and more",
+        "image": "assets/images/hospitals/st-anne.PNG",
         "coordinates": {
             "lat": 13.9376,
             "lng": 121.6187
@@ -701,6 +738,7 @@
     {
         "name": "Lucena United Doctors Hospital And Medical Center",
         "description": "A private, Level II, DOH-PHIC-accredited, multi-specialty healthcare institution offering a wide range of medical services and exceptional patient care.",
+        "image": "assets/images/hospitals/lucena-united.PNG",
         "coordinates": {
             "lat": 13.9473,
             "lng": 121.5853
@@ -720,6 +758,7 @@
     {
         "name": "Savemore Market",
         "description": "Ooffering a wide selection of fresh produce, pantry staples, and household essentials at affordable prices.",
+        "image": "assets/images/supermarket/savemore.PNG",
         "coordinates": {
             "lat": 13.9346,
             "lng": 121.6145
@@ -740,6 +779,7 @@
     {
         "name": "La Suerte Warehouse City",
         "description": "Spacious retail hub offering a wide selection of groceries, household goods, and wholesale items",
+        "image": "assets/images/supermarket/la-suerte.PNG",
         "coordinates": {
             "lat": 13.9329,
             "lng": 121.6143
@@ -759,6 +799,7 @@
     {
         "name": "New Prosperous Grocery",
         "description": "Offering essential grocery items and household goods for everyday needs.",
+        "image": "assets/images/supermarket/prosperous.png",
         "coordinates": {
             "lat": 13.9336,
             "lng": 121.6143
@@ -777,6 +818,7 @@
     {
         "name": "New Lucena City Public Market",
         "description": "Offering a clean and organized shopping experience for fresh produce, dry goods, and local products",
+        "image": "assets/images/supermarket/public-market.PNG",
         "coordinates": {
             "lat": 13.9334,
             "lng": 121.6146
@@ -795,6 +837,7 @@
     {
         "name": "Ilaya Mart",
         "description": "Offering a convenient selection of groceries, household essentials, and general merchandise for everyday needs.",
+        "image": "assets/images/supermarket/ilaya-mart.PNG",
         "coordinates": {
             "lat": 13.9340,
             "lng": 121.6123
@@ -813,6 +856,7 @@
     {
         "name": "Shoprite Center",
         "description": "Offering a convenient selection of daily essentials and household items",
+        "image": "assets/images/supermarket/shoprite.PNG",
         "coordinates": {
             "lat": 13.9347,
             "lng": 121.6145
@@ -830,6 +874,7 @@
     {
         "name": "Puregold Gulang-Gulang Lucena",
         "description": "Offering a wide selection of groceries, household essentials, and wholesale items at affordable prices",
+        "image": "assets/images/supermarket/puregold.PNG",
         "coordinates": {
             "lat": 13.9470,
             "lng": 121.6140
@@ -847,6 +892,7 @@
     {
         "name": "BMADZ Stop & Go HyperMarket",
         "description": "Offering a convenient selection of groceries and household essentials for everyday needs",
+        "image": "assets/images/supermarket/bmadz.PNG",
         "coordinates": {
             "lat": 13.9349,
             "lng": 121.6020
@@ -865,6 +911,7 @@
     {
         "name": "UNITOP",
         "description": "Offering a wide selection of affordable household items, home decor, and general merchandise,",
+        "image": "assets/images/department-stores/unitop.PNG",
         "coordinates": {
             "lat": 13.9351,
             "lng": 121.6141
@@ -883,7 +930,8 @@
     },
     {
         "name": "NOVO",
-        "description": "Budget-friendly retail destination offering a wide variety of clothing, household items, and general merchandise,",
+        "description": "Budget-friendly retail destination offering a wide variety of clothing, household items, and general merchandise.",
+        "image": "assets/images/department-stores/novo.png",
         "coordinates": {
             "lat": 13.9322,
             "lng": 121.6126
@@ -902,7 +950,8 @@
     },
     {
         "name": "JoyCity",
-        "description": "Providing an extensive variety of affordable school supplies, office essentials, and general merchandise",
+        "description": "Providing an extensive variety of affordable school supplies, office essentials, and general merchandise.",
+        "image": "assets/images/department-stores/joycity.PNG",
         "coordinates": {
             "lat": 13.9357,
             "lng": 121.6146
@@ -922,6 +971,7 @@
     {
         "name": "Sunlife Bookstore",
         "description": "Offering a wide range of school supplies, office essentials, and stationery products.",
+        "image": "assets/images/department-stores/sunlife.png",
         "coordinates": {
             "lat": 13.9359,
             "lng": 121.6137
@@ -941,6 +991,7 @@
     {
         "name": "Lucky Book Store",
         "description": "Offers affordable school supplies, office essentials, art materials, and sporting goods",
+        "image": "assets/images/department-stores/lucky-bookstore.PNG",
         "coordinates": {
             "lat": 13.9360,
             "lng": 121.6133
@@ -961,6 +1012,7 @@
     {
         "name": "Museo de Lucena",
         "description": "Offers an immersive journey through Lucena City's rich history and culture.",
+        "image": "assets/images/museum/museo.PNG",
         "coordinates": {
             "lat": 13.9365,
             "lng": 121.6116
@@ -980,6 +1032,7 @@
     {
         "name": "Sampaguita Resort",
         "description": "Family-friendly destination offering swimming pools, picnic areas, and event spaces",
+        "image": "assets/images/hotels-resorts/sampaguita.PNG",
         "coordinates": {
             "lat": 13.93624,
             "lng": 121.5913
@@ -999,6 +1052,7 @@
     {
         "name": "Del Maro Resort",
         "description": "Family-friendly destination offering swimming pools, picnic areas, and event spaces",
+        "image": "assets/images/hotels-resorts/delmaro.PNG",
         "coordinates": {
             "lat": 13.9269,
             "lng": 121.5924
@@ -1017,7 +1071,8 @@
     },
     {
         "name": "Queen Mariett Island Nature Resort (Private Pool)",
-        "description": "Offers a serene escape with natural warm spring pools, private event spaces, ",
+        "description": "Offers a serene escape with natural warm spring pools, private event spaces.",
+        "image": "assets/images/hotels-resorts/queen-mariett.png",
         "coordinates": {
             "lat": 13.9012,
             "lng": 121.6101
@@ -1037,6 +1092,7 @@
     {
         "name": "Quezon Adventure Hotel, Resort and Restaurant",
         "description": "Features spacious accommodations, swimming pools, and the Green Nature Restaurant,",
+        "image": "assets/images/hotels-resorts/quezon-premier-hotel.PNG",
         "coordinates": {
             "lat": 13.9614,
             "lng": 121.6005
@@ -1057,6 +1113,7 @@
     {
         "name": "Quezon Convention Center",
         "description": "A premier multi-purpose venue in Lucena City boasting a 7,000-seat capacity",
+        "image": "assets/images/government-building/quezon-convention-center.PNG",
         "coordinates": {
             "lat": 13.9283,
             "lng": 121.6137
@@ -1077,6 +1134,7 @@
     {
         "name": "Quezon Provincial Capitol",
         "description": "A historic landmark constructed in 1908 on land donated by then-Governor Don Felimon Perez.",
+        "image": "assets/images/government-building/quezon-capitol.PNG",
         "coordinates": {
             "lat": 13.9288,
             "lng": 121.6133
@@ -1095,7 +1153,8 @@
     },
     {
         "name": "Quezon Monument",
-        "description": "A profound tribute to President Manuel L. Quezon, located within the historic Perez Park. ",
+        "description": "A profound tribute to President Manuel L. Quezon, located within the historic Perez Park.",
+        "image": "assets/images/government-building/quezon-monument.PNG",
         "coordinates": {
             "lat": 13.9276,
             "lng": 121.6129
@@ -1115,7 +1174,8 @@
     },
     {
         "name": "Quezon District Jail",
-        "description": "Facility managed by the Bureau of Jail Management and Penology (BJMP)",
+        "description": "Facility managed by the Bureau of Jail Management and Penology (BJMP).",
+        "image": "assets/images/government-building/quezon-district-jail.png",
         "coordinates": {
             "lat": 13.9286,
             "lng": 121.6144
@@ -1135,6 +1195,7 @@
     {
         "name": "Lucena City Government Complex",
         "description": "Serves as the central hub for the city's administrative operations.",
+        "image": "assets/images/government-building/lucena-city-government-complex.PNG",
         "coordinates": {
             "lat": 13.9630,
             "lng": 121.6346
@@ -1154,6 +1215,7 @@
     {
         "name": "Lucena City Police Station",
         "description": "Part of the Quezon Police Provincial Office, serves as the primary law enforcement agency for Lucena City.",
+        "image": "assets/images/government-building/lucena-police-station.PNG",
         "coordinates": {
             "lat": 13.9362,
             "lng": 121.6116
@@ -1173,6 +1235,7 @@
     {
         "name": "Lucena City Police Station (Iyam Substation)",
         "description": "Satellite facility of the Lucena City Police Station, serving the Ilayang Iyam",
+        "image": "assets/images/government-building/iyam-substation.png",
         "coordinates": {
             "lat": 13.9340,
             "lng": 121.6048
@@ -1192,6 +1255,7 @@
     {
         "name": "Governor's Mansion",
         "description": "Stands as a testament to the region's rich history and architectural elegance",
+        "image": "assets/images/government-building/governor-mansion.PNG",
         "coordinates": {
             "lat": 13.9278,
             "lng": 121.6119
@@ -1212,6 +1276,7 @@
     {
         "name": "Saint Ferdinand Cathedral",
         "description": "A revered Roman Catholic church and the seat of the Diocese of Lucena",
+        "image": "assets/images/churches/saint-ferdinand.PNG",
         "coordinates": {
             "lat": 13.9359,
             "lng": 121.6124
@@ -1231,6 +1296,7 @@
     {
         "name": "Parish of the Shrine of Saint Jude",
         "description": "A beacon of hope for countless devotees.",
+        "image": "assets/images/churches/saint-jude.PNG",
         "coordinates": {
             "lat": 13.9175,
             "lng": 121.6072
@@ -1250,6 +1316,7 @@
     {
         "name": "Grace Church International",
         "description": "Spirit-filled community dedicated to transforming lives through the Gospel of Jesus Christ.",
+        "image": "assets/images/churches/gci.PNG",
         "coordinates": {
             "lat": 13.9247,
             "lng": 121.6113
@@ -1268,7 +1335,8 @@
     },
     {
         "name": "Iglesia ni Cristo (Lokal ng Lucena City)",
-        "description": "Offers a structured schedule of worship services designed to accommodate the spiritual needs ",
+        "description": "Offers a structured schedule of worship services designed to accommodate the spiritual needs.",
+        "image": "assets/images/churches/iglesia-ni-cristo.PNG",
         "coordinates": {
             "lat": 13.9286,
             "lng": 121.6121
@@ -1288,6 +1356,7 @@
     {
         "name": "Manuel S. Enverga University Foundation",
         "description": "Established in 1947, a premier private institution renowned for its commitment to academic excellence.",
+        "image": "assets/images/schools/enverga.PNG",
         "coordinates": {
             "lat": 13.9494,
             "lng": 121.6203
@@ -1308,6 +1377,7 @@
     {
         "name": "Dalubhasaan ng Lungsod ng Lucena",
         "description": "Formerly known as the City College of Lucena, is the first local college in Quezon Province operated and managed by the City Government of Lucena.",
+        "image": "assets/images/schools/dll.png",
         "coordinates": {
             "lat": 13.9466,
             "lng": 121.5895
@@ -1328,6 +1398,7 @@
     {
         "name": "Quezon National High School",
         "description": "Established in October 1902 by Thomasite Aubrey Boyles as Tayabas High School. One of the oldest and largest public secondary schools in the Philippines",
+        "image": "assets/images/schools/quezon-high.PNG",
         "coordinates": {
             "lat": 13.9328,
             "lng": 121.6054
@@ -1347,6 +1418,7 @@
     {
         "name": "Maryhill College",
         "description": "Catholic Marian educational institution founded in 1938",
+        "image": "assets/images/schools/maryhill.PNG",
         "coordinates": {
             "lat": 13.9363,
             "lng": 121.6129
@@ -1367,6 +1439,7 @@
     {
         "name": "Sacred Heart College",
         "description": "Founded on April 27, 1884 and established by Hermana Fausta Labrador. The oldest Catholic institution in Quezon Province.",
+        "image": "assets/images/schools/sacred-heart.PNG",
         "coordinates": {
             "lat": 13.9409,
             "lng": 121.6159
@@ -1387,6 +1460,7 @@
     {
         "name": "Lucena Fish Port Complex",
         "description": "A vital hub for the region's fishing industry",
+        "image": "assets/images/government-building/fish-port-complex.PNG",
         "coordinates": {
             "lat": 13.9038,
             "lng": 121.6219
@@ -1406,6 +1480,7 @@
     {
         "name": "PNR (Lucena Station)",
         "description": "Established in 1913, it has served as a vital link in the Philippine National Railways (PNR) South Main Line",
+        "image": "assets/images/terminals/pnr-station.PNG",
         "coordinates": {
             "lat": 13.9270,
             "lng": 121.6130
@@ -1425,6 +1500,7 @@
     {
         "name": "Supreme Lucena City Terminal",
         "description": "Serves as a primary departure point for buses traveling between Lucena and Batangas City",
+        "image": "assets/images/terminals/supreme-terminal.PNG",
         "coordinates": {
             "lat": 13.9456,
             "lng": 121.5915
@@ -1444,6 +1520,7 @@
     {
         "name": "Tayabas-Lucban Terminal",
         "description": "A key transportation hub in Quezon Province, facilitating travel between Lucena City, Tayabas, and Lucban.",
+        "image": "assets/images/terminals/tayabas-lucban-terminal.png",
         "coordinates": {
             "lat": 13.9613,
             "lng": 121.6098
@@ -1463,6 +1540,7 @@
     {
         "name": "Lucena Grand Terminal",
         "description": "Serves as a vital transit point for travelers heading to various destinations across CALABARZON, Metro Manila, and Bicol regions.",
+        "image": "assets/images/terminals/grand-terminal.PNG",
         "coordinates": {
             "lat": 13.9584,
             "lng": 121.6170
@@ -1482,6 +1560,7 @@
     {
         "name": "Tropical Diner",
         "description": "Offers a vibrant dining experience featuring a diverse menu of flavorful dishes",
+        "image": "assets/images/restaurants/tropical-diner.png",
         "coordinates": {
             "lat": 13.9393,
             "lng": 121.6131
@@ -1500,7 +1579,8 @@
     },
     {
         "name": "FARCARE Diagnostic Center and Medical Clinic",
-        "description": "Provides reliable medical diagnostics and expert consultation services, ",
+        "description": "Provides reliable medical diagnostics and expert consultation services.",
+        "image": "assets/images/hospitals/farcare.PNG",
         "coordinates": {
             "lat": 13.9397,
             "lng": 121.6131
@@ -1520,6 +1600,7 @@
     {
         "name": "Happy Chicken",
         "description": "Go-to spot for freshly prepared, flavorful chicken dishes and comforting meals.",
+        "image": "assets/images/restaurants/happy-chicken.PNG",
         "coordinates": {
             "lat": 13.9373,
             "lng": 121.6119
@@ -1540,6 +1621,7 @@
     {
         "name": "Tip Beez Bar & Food Hub",
         "description": "Lively spot offering delicious food, refreshing drinks, and a vibrant ambiance",
+        "image": "assets/images/bar/beez-bar.PNG",
         "coordinates": {
             "lat": 13.9376,
             "lng": 121.6117
@@ -1559,6 +1641,7 @@
     {
         "name": "The Green Bowl",
         "description": "Fresh and healthy dining destination",
+        "image": "assets/images/restaurants/the-green-bowl.PNG",
         "coordinates": {
             "lat": 13.9389,
             "lng": 121.6125
@@ -1578,6 +1661,7 @@
     {
         "name": "DadBod",
         "description": "Offers a relaxed atmosphere with a menu full of hearty comfort food and refreshing drinks",
+        "image": "assets/images/restaurants/dadbod.png",
         "coordinates": {
             "lat": 13.9399,
             "lng": 121.6138
@@ -1597,6 +1681,7 @@
     {
         "name": "Heartbeat Restobar Lucena",
         "description": "Offering a variety of delicious drinks and a mouth-watering menu",
+        "image": "assets/images/bar/heartbeat-restobar.PNG",
         "coordinates": {
             "lat": 13.9390,
             "lng": 121.6131
@@ -1616,6 +1701,7 @@
     {
         "name": "Symoone Bar & Resto",
         "description": "Offering a diverse selection of food and drinks, it’s the perfect place for a fun night out",
+        "image": "assets/images/bar/symoone-bar.png",
         "coordinates": {
             "lat": 13.9390,
             "lng": 121.6130
@@ -1634,7 +1720,8 @@
     },
     {
         "name": "The Church of Jesus Christ of Latter-day Saints",
-        "description": "Offers a peaceful and welcoming environment for spiritual growth. ",
+        "description": "Offers a peaceful and welcoming environment for spiritual growth.",
+        "image": "assets/images/churches/latter-saints.PNG",
         "coordinates": {
             "lat": 13.9432,
             "lng": 121.6135
@@ -1654,6 +1741,7 @@
     {
         "name": "Lucena Holistic",
         "description": "A wellness center dedicated to nurturing both mind and body.",
+        "image": "assets/images/churches/lucena-holistic.PNG",
         "coordinates": {
             "lat": 13.9432,
             "lng": 121.6139
@@ -1674,6 +1762,7 @@
     {
         "name": "Luisa Cafe & Restaurant",
         "description": "A charming spot offering a delightful blend of local and international flavors.",
+        "image": "assets/images/restaurants/luisa-resto.PNG",
         "coordinates": {
             "lat": 13.9429,
             "lng": 121.6139
@@ -1694,6 +1783,7 @@
     {
         "name": "MJD Urban Escape Farm Resto",
         "description": "A relaxing restaurant located in Bocohan, Lucena City.",
+        "image": "assets/images/restaurants/mjd.PNG",
         "coordinates": {
         "lat": 13.9571, 
         "lng": 121.5935
@@ -1702,12 +1792,12 @@
             "barangay": "Bocohan",
             "purok": "near Inter-Global"
         },
-        "tags": ["restaurant", "food"],
-        "image": "assets/image/Food&Resto/Buddys-Restaurant.jpg"
+        "tags": ["restaurant", "food"]
     },
     {
         "name": "San Rafael the Archangel Parish",
         "description": "A parish church situated in Dalahican, Lucena City.",
+        "image": "assets/images/churches/saint-raphael.PNG",
         "coordinates": {
         "lat": 13.9141, 
         "lng": 121.6165
@@ -1721,6 +1811,7 @@
     {
         "name": "Hotel Rosita",
         "description": "A hotel located in Domoit, Lucena City.",
+        "image": "assets/images/hotels-resorts/rosita.PNG",
         "coordinates": {
         "lat": 13.9615, 
         "lng": 121.5996
@@ -1734,6 +1825,7 @@
     {
         "name": "Koi Cafe & Restaurant",
         "description": "A cozy café and restaurant in Domoit, Lucena City.",
+        "image": "assets/images/restaurants/koi.PNG",
         "coordinates": {
         "lat": 13.9644, 
         "lng": 121.602
@@ -1747,6 +1839,7 @@
     {
         "name": "Diocesan Shrine of Our Lady of Peñafrancia",
         "description": "A religious shrine located in Gulang-Gulang, Lucena City.",
+        "image": "assets/images/churches/penafrancia.PNG",
         "coordinates": {
         "lat": 13.9562, 
         "lng": 121.6064
@@ -1761,6 +1854,7 @@
     {
         "name": "Catalino's Café and Restaurant",
         "description": "A dining spot located in Gulang-Gulang, Lucena City.",
+        "image": "assets/images/restaurants/catalinos.PNG",
         "coordinates": {
         "lat": 13.9725,
         "lng": 121.6100
@@ -1775,6 +1869,7 @@
     {
         "name": "St. Isidore Labrador Parish",
         "description": "A church serving the Ibabang Dupay community in Lucena City.",
+        "image": "assets/images/churches/saint-isidore.PNG",
         "coordinates": {
         "lat": 13.9411, 
         "lng": 121.6219
@@ -1788,6 +1883,7 @@
     {
         "name": "Dupay Seventh Day Adventist Church",
         "description": "An Adventist church in Ilayang Dupay, Lucena City.",
+        "image": "assets/images/churches/adventist-church.PNG",
         "coordinates": {
         "lat": 13.9641, 
         "lng": 121.6218
@@ -1801,6 +1897,7 @@
     {
         "name": "Our Lady of Lourdes Parish",
         "description": "A parish church in Ibabang Iyam, Lucena City.",
+        "image": "assets/images/churches/lourdes-parish.PNG",
         "coordinates": {
         "lat": 13.9336,
         "lng":  121.6044
@@ -1810,5 +1907,222 @@
             "purok": "38 Nadres St."
         },
         "tags": ["church"]
+    },    
+    {
+        "name": "Granja Panciteria",
+        "description": "Famous karenderia and short-order restaurant offering delicious local dishes",
+        "image": "assets/images/restaurants/granja.PNG",
+        "coordinates": {
+            "lat": 13.9319,
+            "lng": 121.6128
+        },
+        "address": {
+            "barangay": "Barangay 9",
+            "Street": "Cor Don Queblar St"
+        },
+        "tags": [
+            "foods",
+            "restaurant",
+            "dining"
+        ]
+    },
+    {
+        "name": "Snack Park",
+        "description": "A small food market offering a variety of snacks and quick bites.",
+        "image": "assets/images/restaurants/snack-park.PNG",
+        "coordinates": {
+            "lat": 13.9291,
+            "lng": 121.6124
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "Street": "Quezon Ave."
+        },
+        "tags": [
+            "food market",
+            "snacks",
+            "quick bites",
+            "local food",
+            "park"
+        ]
+    },
+    {
+        "name": "Choiyatzkies' Seafood Restaurant",
+        "description": "Offering a variety of fresh seafood dishes",
+        "image": "assets/images/restaurants/choiyatzkies.PNG",
+        "coordinates": {
+            "lat": 13.9284,
+            "lng": 121.6166
+        },
+        "address": {
+            "barangay": "Barangay 10",
+            "Street": "Bel-air Subdivision Rosal II."
+        },
+        "tags": [
+            "seafood",
+            "restaurant",
+            "local delicacies",
+            "fresh dishes"
+        ]
+    },
+    {
+        "name": "Espresso de Kaldi",
+        "description": "A cozy cafe offering a variety of coffee blends and delightful goods.",
+        "image": "assets/images/restaurants/espresso.png",
+        "coordinates": {
+            "lat": 13.9502,
+            "lng": 121.6145
+        },
+        "address": {
+            "barangay": "Barangay 11",
+            "Street": "Quezon Ave"
+        },
+        "tags": [
+            "cafe",
+            "coffee",
+            "baked goods",
+            "cozy",
+            "refreshments"
+        ]
+    },
+    {
+        "name": "Jake Harrod's Private Resort",
+        "description": "A private resort offering exclusive amenities for gatherings and relaxation.",
+        "image": "assets/images/hotels-resorts/jake-harrod.PNG",
+        "coordinates": {
+            "lat": 13.9355,
+            "lng": 121.6200
+        },
+        "address": {
+            "barangay": "Mayao Silangan",
+            "Street": "Mayao Silangan, Lucena City"
+        },
+        "tags": [
+            "resort",
+            "private",
+            "exclusive",
+            "events",
+            "relaxation"
+        ]
+    },
+    {
+        "name": "Ala Eh Beach Resort",
+        "description": "A beachfront resort offering open cottages and boating activities, ideal for family gatherings and relaxation.",
+        "image": "assets/images/hotels-resorts/ala-eh-beach.PNG",
+        "coordinates": {
+            "lat": 13.9335,
+            "lng": 121.6170
+        },
+        "address": {
+            "barangay": "Ransohan",
+            "Street": "Brgy. Ransohan, Lucena City"
+        },
+        "tags": [
+            "resort",
+            "beach",
+            "family-friendly",
+            "boating",
+            "relaxation"
+        ]
+    },
+    {
+        "name": "Potch Restaurant",
+        "description": "A cozy dining spot known for its inviting ambiance and delicious meals, including their signature Hainanese Chicken.",
+        "image": "assets/images/restaurants/potch.PNG",
+        "coordinates": {
+            "lat": 13.9345,
+            "lng": 121.6170
+        },
+        "address": {
+            "barangay": "Salinas",
+            "Street": "Eco-Tourism Road"
+        },
+        "tags": [
+            "restaurant",
+            "Filipino cuisine",
+            "Hainanese Chicken",
+            "dining",
+            "comfort food"
+        ]
+    },
+    {
+        "name": "The Complex at Salinas",
+        "description": "A versatile venue offering spaces for events, gatherings, and various functions, equipped with modern amenities.",
+        "image": "assets/images/government-building/complex-salinas.PNG",
+        "coordinates": {
+            "lat": 13.9340,
+            "lng": 121.6165
+        },
+        "address": {
+            "barangay": "Salinas",
+            "Street": "Eco-Tourism Road"
+        },
+        "tags": [
+            "event venue",
+            "function hall",
+            "gatherings",
+            "events",
+            "modern amenities"
+        ]
+    },
+    {
+        "name": "Cocu Sports Bar",
+        "description": "A lively sports bar offering a range of drinks and a vibrant atmosphere, perfect for watching games and socializing.",
+        "image": "assets/images/bar/cocu-sports-bar.PNG",
+        "coordinates": {
+            "lat": 13.9338,
+            "lng": 121.6168
+        },
+        "address": {
+            "barangay": "Salinas",
+            "Street": "Eco-Tourism Road"
+        },
+        "tags": [
+            "bar",
+            "sports",
+            "entertainment",
+            "socializing",
+            "live sports"
+        ]
+    },
+    {
+        "name": "Anncent Seafood Restaurant",
+        "description": "A renowned seafood restaurant offering fresh Hong Kong-style dishes, including their signature chili crab and steamed fish.",
+        "image": "assets/images/bar/anncent.PNG",
+        "coordinates": {
+            "lat": 13.9350,
+            "lng": 121.6175
+        },
+        "address": {
+            "barangay": "Talao-Talao",
+            "Street": "Purok Talisay"
+        },
+        "tags": [
+            "seafood",
+            "Hong Kong-style",
+            "family-friendly",
+            "fresh",
+            "signature dishes"
+        ]
+    },
+    {
+        "name": "Munting Talao-Talao Beach Resort",
+        "description": "A serene beach resort offering a peaceful retreat with beach access, ideal for family gatherings and relaxation.",
+        "image": "assets/images/hotels-resorts/munting-talao-talao.PNG",
+        "coordinates": {
+            "lat": 13.9375,
+            "lng": 121.6160
+        },
+        "address": {
+            "barangay": "Talao-Talao",
+            "Street": "Aplaya"
+        },
+        "tags": [
+            "beach",
+            "family-friendly",
+            "relaxation",
+            "resort",
+            "peaceful retreat"
+        ]
     }
 ]

@@ -1,4 +1,3 @@
-
 const Planner = ({ planner, showDirection }) => {
     const markerColors = [
     "#E74C3C", // Red

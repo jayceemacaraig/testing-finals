@@ -8,7 +8,7 @@ import fetchCoordinates from "./utils/fetchCoordinates";
 import { fetchCurrentLocation, lng, lat } from "./utils/fetchCurrentLocation";
 import Description from "./components/Description";
 import SearchBar from "./components/SearchBar";
-import createNumberedMarker from "./utils/createNumberedMarker";
+import createNumberedMarker from "./utils/creteNumberedMarker";
 
 const App = () => {
   const mapRef = useRef(null);
@@ -21,6 +21,7 @@ const App = () => {
   const [planner, setPlanner] = useState([]);
   const [userLocation, setUserLocation] = useState([]);
   const [start, setStart] = useState(false);
+  const [placeidx, setPlaceidx] = useState(0);
 
   // const top10Places = [
   //   "Perez Park",
@@ -48,21 +49,21 @@ const App = () => {
       });
 
       let initlist = [userLocation];
-
+      L.marker([userLocation[1], userLocation[0]])
+        .bindPopup(`<b>Your Location</b>`)
+        .addTo(map);
       planner.map((planner, index) => {
         for (let place of places) {
           if (planner === place.name) {
-            L.marker([place.coordinates.lat, place.coordinates.lng], {
-              icon: createNumberedMarker(index),
-            }).addTo(map);
+            createNumberedMarker(
+              map,[place.coordinates.lat, place.coordinates.lng],index + 1).bindPopup(`<b>${place.name}</b>`);
             initlist.push([place.coordinates.lng, place.coordinates.lat]);
           }
         }
       });
 
       setCoords(initlist);
-      await fetchCoordinates(initlist, setList);
-      setStart(true);
+      await fetchCoordinates(initlist, setList, setStart);
     } catch (err) {
       console.error("Error fetching planner:", err);
     }
@@ -102,45 +103,23 @@ const App = () => {
       console.warn("No route data available.");
       return;
     }
-
-    map.eachLayer((layer) => {
-      if (layer instanceof L.Marker) {
-        map.removeLayer(layer);
-      }
-    });
-
-
+    map.eachLayer((layer) => {if (layer instanceof L.Marker) {map.removeLayer(layer);}});
     if (index === 1) {
+      console.log(`Segment ${index}: Start to ${index}`);
+      setPlaceidx(index);
       setSegment(list.slice(0, findClosestIndex(list, coords[index])));
-      console.log(`Segment 0: Start to ${index}`);
-      L.marker([coords[index - 1][1], coords[index - 1][0]])
-        .bindPopup(`<b>Your Location</b>`)
-        .addTo(map);
-      L.marker([coords[index][1], coords[index][0]], {
-        icon: createNumberedMarker(index),
-      }).addTo(map);
+      console.log(findClosestIndex(list, coords[index]))
 
     } else if (index === coords.length - 1) {
-      setSegment(list.slice(findClosestIndex(list, coords[coords.length - 2])));
-      console.log(`Segment ${index}: ${coords.length - 2} to end`);
-      L.marker([coords[coords.length - 1][1], coords[coords.length - 1][0]], {
-        icon: createNumberedMarker(index),
-      }).addTo(map);
-      L.marker([coords[coords.length - 2][1], coords[coords.length - 2][0]], {
-        icon: createNumberedMarker(index),
-      }).addTo(map);
-
+        console.log(`Segment ${index}: ${coords.length - 2} to end`);
+        setPlaceidx(index);
+        setSegment(list.slice(findClosestIndex(list, coords[coords.length - 2])));
+        console.log(findClosestIndex(list, coords[coords.length - 2]))
     } else {
-      const startIdx = findClosestIndex(list, coords[index - 1]);
-      const endIdx = findClosestIndex(list, coords[index]);
-      setSegment(list.slice(startIdx, endIdx));
-      console.log(`Segment ${index}: ${index - 1} to ${index}`);
-      L.marker([coords[index - 1][1], coords[index - 1][0]], {
-        icon: createNumberedMarker(index),
-      }).addTo(map);
-      L.marker([coords[index][1], coords[index][0]], {
-        icon: createNumberedMarker(index),
-      }).addTo(map);
+        setPlaceidx(index);
+        console.log(`Segment ${index}: ${index - 1} to ${index}`);
+        setSegment(list.slice(findClosestIndex(list, coords[index - 1]), findClosestIndex(list, coords[index])));
+        console.log(findClosestIndex(list, coords[index - 1]), findClosestIndex(list, coords[index]))
     }
   };
 
@@ -182,6 +161,22 @@ const App = () => {
         map.removeLayer(layer);
       }
     });
+
+   if (placeidx === 1) {
+      L.marker([coords[placeidx - 1][1], coords[placeidx - 1][0]])
+      .bindPopup(`<b>Your Location</b>`)
+      .addTo(map);
+      createNumberedMarker(map, [coords[placeidx][1], coords[placeidx][0]], placeidx);
+
+    } else if (placeidx === coords.length - 1) {
+        createNumberedMarker(map,[coords[placeidx - 1][1], coords[placeidx - 1][0]],placeidx - 1);
+        createNumberedMarker(map,[coords[placeidx][1], coords[placeidx][0]], placeidx);
+    } else {
+        createNumberedMarker(map,[coords[placeidx - 1][1], coords[placeidx - 1][0]],placeidx - 1);
+        createNumberedMarker(map, [coords[placeidx][1], coords[placeidx][0]], placeidx);
+
+    }
+
   };
 
   useEffect(() => {
@@ -212,6 +207,7 @@ const App = () => {
           start={start}
           showDirection={showDirection}
           fetchPlanner={fetchPlanner}
+          filteredPlaces={filteredPlaces}
         />
       </div>
       <div className="w-full h-screen p-5 border-2 mt-2 mr-5 rounded-2xl">

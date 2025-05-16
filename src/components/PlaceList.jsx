@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
-import places from "../places.json";
-
-const PlaceList = ({ setPlanner, planner }) => {
+const PlaceList = ({ setPlanner, planner,filteredPlaces }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const placesPerPage = 4;
 
-  const totalPages = Math.ceil(places.length / placesPerPage);
+  const totalPages = Math.ceil(filteredPlaces.length / placesPerPage);
   const indexOfLastPlace = currentPage * placesPerPage;
   const indexOfFirstPlace = indexOfLastPlace - placesPerPage;
-  const currentPlaces = places.slice(indexOfFirstPlace, indexOfLastPlace);
+  const currentPlaces = filteredPlaces.slice(indexOfFirstPlace, indexOfLastPlace);
 
   const goToNextPage = () => {
     if (currentPage < totalPages) {
@@ -32,13 +30,14 @@ const PlaceList = ({ setPlanner, planner }) => {
   setPlanner((prev) => prev.filter((place) => place !== name));
 };
 
-
   const handlers = useSwipeable({
     onSwipedLeft: goToNextPage,
     onSwipedRight: goToPreviousPage,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
+
+  
 
   return (
     <div className="max-w-3xl mx-auto p-4 flex flex-col">
