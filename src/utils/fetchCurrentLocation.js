@@ -17,10 +17,6 @@ const fetchCurrentLocation = async () => {
   });
 };
 
-async function main() {
-  const [lng, lat] = await fetchCurrentLocation();
-  // ...rest of your code...
-}
-main();
+const [lng, lat] = await fetchCurrentLocation();
 
 export {fetchCurrentLocation, lng, lat }
