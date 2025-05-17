@@ -12,6 +12,8 @@ const Location = ({
   setForDescription,
   setActiveTab,
   setForDescriptionIdx,
+  setFilteredPlaces,
+  setInput,
   routeLayer
 }) => {
   return (
@@ -35,6 +37,8 @@ const Location = ({
             fetchPlanner={fetchPlanner}
             setForDescription={setForDescription}
             setActiveTab={setActiveTab}
+            setFilteredPlaces={setFilteredPlaces}
+            setInput={setInput}
           />
         </>
       )}

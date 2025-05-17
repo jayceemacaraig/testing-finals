@@ -14,7 +14,6 @@ import TravelPlan from "./components/TravelPlan";
 import SearchBar from "./components/SearchBar";
 import createNumberedMarker from "./utils/createNumberedMarker";
 import Notif from "./components/Notif";
-import { RiContactsBookLine } from "react-icons/ri";
 
 const App = () => {
   const mapRef = useRef(null);
@@ -294,6 +293,8 @@ const App = () => {
           setForDescription={setForDescription}
           setActiveTab={setActiveTab}
           setForDescriptionIdx={setForDescriptionIdx}
+          setFilteredPlaces={setFilteredPlaces}
+          setInput={setInput}
           routeLayer={routeLayer}
         />
       </aside>

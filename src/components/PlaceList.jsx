@@ -1,7 +1,7 @@
 import L from "leaflet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoMdRefresh } from "react-icons/io";
-
+import places from '../places.json'
 
 const PlaceList = ({
   setPlanner,
@@ -11,13 +11,22 @@ const PlaceList = ({
   fetchPlanner,
   setForDescription,
   setActiveTab,
+  setFilteredPlaces,
+  setInput
 }) => {
   const [array, setArray] = useState(filteredPlaces);
+
+  useEffect(() => {
+    setArray(filteredPlaces)
+  },[filteredPlaces])
+
   const AddtoPlanner = (name) => {
     setPlanner((prev) => [...prev, name]);
   };
 
   const shuffleArray = (array) => {
+    setInput('')
+    setFilteredPlaces(places)
     const arr = [...array];
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -76,7 +85,7 @@ const PlaceList = ({
                       {place.name}
                     </p>
                     <button
-                      className="text-xs rounded-full px-6 py-1 block mx-auto disabled:cursor-not-allowed bg-green-400 disabled:bg-gray-400 text-white"
+                      className="text-xs rounded-full w-4/5 px-8 py-1 block mx-auto disabled:cursor-not-allowed bg-green-400 disabled:bg-gray-400 text-white"
                       onClick={() => {
                         AddtoPlanner(place.name);
                         setActiveTab("travelplan");

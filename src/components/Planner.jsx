@@ -32,8 +32,8 @@ const Planner = ({
     <div className="max-w-3xl mx-auto p-4 items-center flex flex-col">
       <h1 className="text-2xl font-bold mb-2">Travel Planner</h1>
 
-      <div className="flex-1 overflow-y-auto">
-        <ul className="py-5 grid grid-cols-2 gap-5 h-70 pr-2">
+      <div className="flex-1 overflow-y-auto h-70">
+        <ul className="py-5 grid grid-cols-2 gap-5 mb-40 h-70 pr-2">
           {planner.map((item, index) => {
             const place = places.find((p) => p.name === item);
             if (!place) return null;
