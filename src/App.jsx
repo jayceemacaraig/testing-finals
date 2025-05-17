@@ -4,7 +4,7 @@ import { IoIosHome } from "react-icons/io";
 import {Link} from 'react-router-dom'
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import logo from "../public/LOGO.png";
+import logo from "/LOGO.png";
 import places from "./places.json";
 import RenderMap from "./components/RenderMap";
 import findClosestIndex from "./utils/findClosestIndex";
@@ -35,7 +35,7 @@ const App = () => {
   const [forDescription, setForDescription] = useState("");
   const [forDescriptionidx, setForDescriptionIdx] = useState(0);
   const [routeInfo, setRouteInfo] = useState([]);
-  const [showGuide, setShowGuide] = useState(false)
+  const [show, setShow] = useState(true)
 
  // Notif state
   const [notifMessage, setNotifMessage] = useState("");
@@ -237,11 +237,11 @@ const App = () => {
           <div className="flex items-center space-x-4 text-black">
             <Link to='/'>
             <button>
-              <IoIosHome className="text-lg"/>
+              <IoIosHome className="text-xl cursor-pointer"/>
             </button>
             </Link>
-            <button>
-              <FaInfoCircle className="text-lg" />
+            <button onClick={() => setShow(true)}>
+              <FaInfoCircle className="text-lg cursor-pointer"/>
             </button>
           </div>
         </div>
@@ -316,7 +316,7 @@ const App = () => {
           setActiveTab={setActiveTab}
         />
       </div>
-      <StepByStepGuide />
+      <StepByStepGuide show={show} setShow={setShow}/>
     </main>
   );
 };

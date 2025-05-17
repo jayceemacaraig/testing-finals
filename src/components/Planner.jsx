@@ -75,7 +75,7 @@ const Planner = ({
                 <div className="flex flex-row items-center justify-between w-full">
                   <h1 className="text-md font-bold">Destination</h1>
                   <p
-                    className="text-center text-sm text-white w-7 h-7 content-center rounded-full border font-bold border-black"
+                    className="text-center text-sm text-white w-7 h-7 content-center rounded-full font-bold"
                     style={{ backgroundColor: markerColors[index] }}
                   >
                     {index + 1}

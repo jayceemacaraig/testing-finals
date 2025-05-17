@@ -35,7 +35,7 @@ const TravelPlan = ({ planner,setPlanner }) => {
           <div className="flex flex-row items-center justify-between w-full">
             <div className="flex flex-row gap-2 items-center">
               <p
-                className="text-center text-sm text-white w-7 h-7 content-center rounded-full border font-bold border-black"
+                className="text-center text-sm text-white w-7 h-7 content-center rounded-full font-bold "
                 style={{ backgroundColor: markerColors[index] }}
               >
                 {index + 1}

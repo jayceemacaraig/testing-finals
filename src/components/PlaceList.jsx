@@ -1,6 +1,6 @@
 import L from "leaflet";
 import { useState, useEffect } from "react";
-import { IoMdRefresh } from "react-icons/io";
+import { TbArrowsShuffle } from "react-icons/tb";
 import places from '../places.json'
 
 const PlaceList = ({
@@ -41,7 +41,8 @@ const PlaceList = ({
       <h1 className="text-2xl font-bold mb-2  self-start">
         Recommendations
       </h1>
-      <IoMdRefresh onClick={() => setArray(shuffleArray(filteredPlaces))} className="text-2xl mr-10"/>
+        <TbArrowsShuffle onClick={() => setArray(shuffleArray(filteredPlaces))} className="text-2xl mr-2"/>
+
       </div>
 
       <div className="flex flex-col justify-between gap-5">

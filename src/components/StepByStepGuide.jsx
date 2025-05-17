@@ -1,33 +1,35 @@
 import { useState } from "react";
 
-export default function StepByStepGuide() {
+export default function StepByStepGuide({show, setShow}) {
   const [step, setStep] = useState(0);
-  const [show, setShow] = useState(true);
 
   const steps = [
     {
       title: "Welcome to TaraVel!",
       body: "Plan routes, discover new places and get turn‑by‑turn directions – all in one screen. Add place by searching or selecting place.",
-      img: "/public/step1.png",
+      img: "/step1.png",
     },
     {
       title: "Search & Filter",
       body: "Use the search bar to find parks, cafés, landmarks… whatever you need.",
-      img: "/public/step2.png",
+      img: "/step2.png",
     },
     {
       title: "Add to Planner",
       body: "Tap a place → “Add” to build your personalised travel plan.",
-      img: "/public/step3.png",
+      img: "/step3.png",
     },
     {
       title: "Start your Trip",
       body: "Hit **Start Travel** and we’ll generate the best route automatically.",
-      img: "/public/step4.png",
+      img: "/step4.png",
     },
   ];
 
-  const closeGuide = () => setShow(false);
+  const closeGuide = () => {
+    setStep(0);
+    setShow(false);
+  };
   const next = () => setStep((prev) => Math.min(prev + 1, steps.length - 1));
   const back = () => setStep((prev) => Math.max(prev - 1, 0));
 
