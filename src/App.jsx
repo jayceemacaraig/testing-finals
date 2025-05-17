@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaCog, FaInfoCircle } from "react-icons/fa";
+import { IoIosHome } from "react-icons/io";
+import {Link} from 'react-router-dom'
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import logo from "../public/LOGO.png";
@@ -33,6 +35,7 @@ const App = () => {
   const [forDescription, setForDescription] = useState("");
   const [forDescriptionidx, setForDescriptionIdx] = useState(0);
   const [routeInfo, setRouteInfo] = useState([]);
+  const [showGuide, setShowGuide] = useState(false)
 
  // Notif state
   const [notifMessage, setNotifMessage] = useState("");
@@ -232,9 +235,11 @@ const App = () => {
         <div className="flex items-center justify-between mb-6 px-6">
           <img src={logo} alt="Logo" className="w-30" />
           <div className="flex items-center space-x-4 text-black">
+            <Link to='/'>
             <button>
-              <FaCog className="text-lg" />
+              <IoIosHome className="text-lg"/>
             </button>
+            </Link>
             <button>
               <FaInfoCircle className="text-lg" />
             </button>

@@ -14,7 +14,7 @@ const Description = ({
 
   if (!place) {
     return (
-      <div className="border border-[#2c3e50] rounded-3xl p-6 w-4/5 m-5 flex justify-between items-start shadow-sm self-center text-gray-400 text-xl">
+      <div className="border border-[#2c3e50] rounded-3xl p-10 w-4/5 m-5 flex justify-between items-start shadow-sm self-center text-gray-400 text-xl">
         Select a place....
       </div>
     );

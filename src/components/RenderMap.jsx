@@ -11,7 +11,7 @@ const RenderMap = ({
 }) => {
   useEffect(() => {
     if (mapRef.current) return; // Prevent reinitializing the map
-    const map = L.map("map").setView([13.9359, 121.6124], 16); // Default center
+    const map = L.map("map").setView([13.9359, 121.6124], 13); // Default center
     mapRef.current = map;
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
