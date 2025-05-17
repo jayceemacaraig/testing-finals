@@ -14,6 +14,7 @@ import TravelPlan from "./components/TravelPlan";
 import SearchBar from "./components/SearchBar";
 import createNumberedMarker from "./utils/createNumberedMarker";
 import Notif from "./components/Notif";
+import StepByStepGuide from "./components/StepByStepGuide";
 
 const App = () => {
   const mapRef = useRef(null);
@@ -45,7 +46,7 @@ const App = () => {
   const fetchPlanner = async () => {
     try {
       if (!planner || planner.length === 0) {
-        console.warn("No planner selected.");
+        triggerNotif("No planner selected.");
         return;
       }
       map.eachLayer((layer) => {
@@ -89,6 +90,7 @@ const App = () => {
   }, []);
 
   const reset = () => {
+    triggerNotif('Plan your travel again!')
     setForDescription("");
     setInput("");
     setStart(false);
@@ -309,6 +311,7 @@ const App = () => {
           setActiveTab={setActiveTab}
         />
       </div>
+      <StepByStepGuide />
     </main>
   );
 };
